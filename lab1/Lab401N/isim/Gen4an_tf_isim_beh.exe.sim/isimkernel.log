@@ -1,0 +1,28 @@
+Command line:
+   Gen4an_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  52632
+
+Fri Sep 12 16:02:38 2025
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.52 Meg
+
+ Total Signals          : 18
+ Total Nets             : 21
+ Total Signal Drivers   : 9
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 14
+ Total Traceable Variables  : 23
+ Total Scalar Nets and Variables : 169
+
+ Total Simulation Time: 0.171875 sec
+
+ Current Memory Usage: 4997.23 Meg
+
+Fri Sep 12 16:04:36 2025
+

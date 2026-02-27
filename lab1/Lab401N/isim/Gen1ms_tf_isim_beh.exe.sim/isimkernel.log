@@ -1,0 +1,28 @@
+Command line:
+   Gen1ms_tf_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  53921
+
+Fri Sep 12 16:17:09 2025
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5154.5 Meg
+
+ Total Signals          : 16
+ Total Nets             : 15
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 10
+ Total Traceable Variables  : 22
+ Total Scalar Nets and Variables : 176
+
+ Total Simulation Time: 0.0625 sec
+
+ Current Memory Usage: 5154.5 Meg
+
+Fri Sep 12 16:17:15 2025
+

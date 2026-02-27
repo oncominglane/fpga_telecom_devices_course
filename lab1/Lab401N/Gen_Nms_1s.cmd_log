@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.v -lang verilog -prj Lab401N -o Gen_Nms_1s.spl -module Gen_Nms_1s -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Gen_Nms_1s.spl C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.v -lang verilog -prj Lab401N -o Gen_Nms_1s.spl -module Gen_Nms_1s -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Gen_Nms_1s.spl C:/FRKT/Golenskikh/Lab401N/Gen_Nms_1s.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/Gen_Nms_1s.v -lang verilog -prj Lab401N -o Gen_Nms_1s.spl -module Gen_Nms_1s -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Gen_Nms_1s.spl C:/FRKT/shev/Lab401N/Gen_Nms_1s.sym 

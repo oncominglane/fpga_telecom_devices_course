@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCBmCLED.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCBmCLED.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/VCBmCLED.v -lang verilog -prj Lab401N -o VCBmCLED.spl -module VCBmCLED -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCBmCLED.spl C:/FRKT/Golenskikh/Lab401N/VCBmCLED.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/VCBmCLED.v -lang verilog -prj Lab401N -o VCBmCLED.spl -module VCBmCLED -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VCBmCLED.spl C:/FRKT/shev/Lab401N/VCBmCLED.sym 

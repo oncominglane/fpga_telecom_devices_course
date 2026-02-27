@@ -1,0 +1,94 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Feb 20 09:53:23 2026
+# Process ID: 2156
+# Log file: C:/FRKT/shev/Lab401N/planAhead_run_1/planAhead.log
+# Journal file: C:/FRKT/shev/Lab401N/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Common 17-86] Your PlanAhead license expires in -385 day(s)
+INFO: [Device 21-36] Loading parts and site information from C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source C:/FRKT/shev/Lab401N/pa.fromHdl.tcl
+# create_project -name Lab401N -dir "C:/FRKT/shev/Lab401N/planAhead_run_1" -part xc3s500efg320-5
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property target_constrs_file "Sch1_lab401.ucf" [current_fileset -constrset]
+Adding file 'C:/FRKT/shev/Lab401N/Sch1_lab401.ucf' to fileset 'constrs_1'
+# set hdlfile [add_files [list {MUX16_4.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Gen_P.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Gen4an.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Gen1ms.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {D7seg.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {VCJ4RE.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {VCD4RE.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {VCBmCLED.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {VCB4RE.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Gen_Nms_1s.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {DISPLAY.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Debouncer.v}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {Sch1_lab401.vf}]]
+# set_property file_type Verilog $hdlfile
+# set_property library work $hdlfile
+# set_property top Sch1_lab401 $srcset
+# add_files [list {Sch1_lab401.ucf}] -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc3s500efg320-5
+Using Verific elaboration
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Parsing VHDL file "C:/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/lib/synplify/synattr.vhd" into library synplify
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/MUX16_4.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Gen_P.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Gen4an.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Gen1ms.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/D7seg.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/VCJ4RE.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/VCD4RE.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/VCBmCLED.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/VCB4RE.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Gen_Nms_1s.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/DISPLAY.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Debouncer.v" into library work
+Analyzing Verilog file "C:/FRKT/shev/Lab401N/Sch1_lab401.vf" into library work
+INFO: [Designutils 20-910] Reading macro library C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [C:/Xilinx/14.7/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+INFO: [Common 17-344] 'open_rtl_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+update_compile_order -fileset sim_1
+exit
+ERROR: [PlanAhead 12-106] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+ (See C:/FRKT/shev/Lab401N\planAhead_pid2156.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Fri Feb 20 09:53:58 2026...
+INFO: [Common 17-83] Releasing license: PlanAhead

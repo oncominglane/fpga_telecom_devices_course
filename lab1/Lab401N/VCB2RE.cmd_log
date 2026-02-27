@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB2RE.ngc VCB2RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB2RE_map.ncd VCB2RE.ngd VCB2RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB2RE_map.ncd VCB2RE.ncd VCB2RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB2RE.twx VCB2RE.ncd -o VCB2RE.twr VCB2RE.pcf 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/VCB4RE.v -lang verilog -prj Lab401N -o VCB2RE.spl -module VCB2RE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCB2RE.spl C:/FRKT/Golenskikh/Lab401N/VCB2RE.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 VCB2RE.ngc VCB2RE.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o VCB2RE_map.ncd VCB2RE.ngd VCB2RE.pcf 
+par -w -intstyle ise -ol high -t 1 VCB2RE_map.ncd VCB2RE.ncd VCB2RE.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml VCB2RE.twx VCB2RE.ncd -o VCB2RE.twr VCB2RE.pcf 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCB2RE.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/VCB4RE.v -lang verilog -prj Lab401N -o VCB2RE.spl -module VCB2RE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCB2RE.spl C:/FRKT/Golenskikh/Lab401N/VCB2RE.sym 

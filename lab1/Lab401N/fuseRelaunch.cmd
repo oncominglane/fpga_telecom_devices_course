@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/FRKT/shev/Lab401N/debouncer_tf_isim_beh.exe" -prj "C:/FRKT/shev/Lab401N/debouncer_tf_beh.prj" "work.debouncer_tf" "work.glbl" 

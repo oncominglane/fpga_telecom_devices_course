@@ -1,0 +1,8 @@
+[Inputs]
+clk
+[Outputs]
+ce1ms
+[BiDir]
+[ATTRIBUTES]
+VeriModel Gen1ms
+

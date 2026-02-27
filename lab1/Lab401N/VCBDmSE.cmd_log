@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCBDmSE.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCBDmSE.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/VCBDmSE.v -lang verilog -prj Lab401N -o VCBDmSE.spl -module VCBDmSE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCBDmSE.spl C:/FRKT/Golenskikh/Lab401N/VCBDmSE.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/VCBDmSE.v -lang verilog -prj Lab401N -o VCBDmSE.spl -module VCBDmSE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VCBDmSE.spl C:/FRKT/shev/Lab401N/VCBDmSE.sym 

@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/DISPLAY.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/DISPLAY.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/DISPLAY.v -lang verilog -prj Lab401N -o DISPLAY.spl -module DISPLAY -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DISPLAY.spl C:/FRKT/Golenskikh/Lab401N/DISPLAY.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/DISPLAY.v -lang verilog -prj Lab401N -o DISPLAY.spl -module DISPLAY -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w DISPLAY.spl C:/FRKT/shev/Lab401N/DISPLAY.sym 

@@ -1,0 +1,12 @@
+[Inputs]
+BTN_IN
+clk
+ce1ms
+[Outputs]
+BTN_OUT
+Q1
+Q2
+[BiDir]
+[ATTRIBUTES]
+VeriModel Debouncer
+

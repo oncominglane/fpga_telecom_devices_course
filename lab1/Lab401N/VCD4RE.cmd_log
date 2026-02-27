@@ -1,0 +1,5 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/VCD4RE.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/VCD4RE.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/VCD4RE.v -lang verilog -prj Lab401N -o VCD4RE.spl -module VCD4RE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e VCD4RE.spl C:/FRKT/Golenskikh/Lab401N/VCD4RE.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/VCD4RE.v -lang verilog -prj Lab401N -o VCD4RE.spl -module VCD4RE -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w VCD4RE.spl C:/FRKT/shev/Lab401N/VCD4RE.sym 

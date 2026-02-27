@@ -1,0 +1,9 @@
+[Inputs]
+=ptr[1:0]=
+=adr_An[1:0]=
+[Outputs]
+seg_P
+[BiDir]
+[ATTRIBUTES]
+VeriModel Gen_P
+

@@ -1,0 +1,28 @@
+Command line:
+   VCBDmSE_test_fixture_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55306
+
+Fri Sep 05 19:27:49 2025
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5153.9 Meg
+
+ Total Signals          : 21
+ Total Nets             : 22
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 173
+
+ Total Simulation Time: 0.25 sec
+
+ Current Memory Usage: 4682.04 Meg
+
+Fri Sep 05 19:44:13 2025
+

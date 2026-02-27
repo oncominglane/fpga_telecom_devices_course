@@ -1,0 +1,16 @@
+// Verilog instantiation template created from schematic C:\FRKT\titov\Lab401N\Sch1_lab401.sch - Fri Oct 03 11:53:11 2025
+//
+// Notes: 
+// To use this template to instantiate this component,cut-and-paste and then edit
+//
+// Instantiate the UUT
+   Sch1_lab401 UUT (
+		.BTN0(    ), 
+		.BTN3(    ), 
+		.AN(    ), 
+		.seg(    ), 
+		.F50MHz(    ), 
+		.LED(    ), 
+		.SW(    ), 
+		.BTN1(    )
+   );
