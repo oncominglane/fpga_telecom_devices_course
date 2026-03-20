@@ -1,0 +1,10 @@
+*.wdb
+*.vcd
+*.log
+*.jou
+*.str
+*.wcfg
+*.cache
+*.sim
+xsim.dir/
+isim/
