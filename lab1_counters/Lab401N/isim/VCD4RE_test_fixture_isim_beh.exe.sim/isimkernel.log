@@ -1,0 +1,28 @@
+Command line:
+   VCD4RE_test_fixture_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50773
+
+Fri Mar 06 14:45:41 2026
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5153.9 Meg
+
+ Total Signals          : 21
+ Total Nets             : 22
+ Total Signal Drivers   : 11
+ Total Blocks           : 3
+ Total Primitive Blocks : 2
+ Total Processes        : 16
+ Total Traceable Variables  : 24
+ Total Scalar Nets and Variables : 173
+
+ Total Simulation Time: 1338.86 sec
+
+ Current Memory Usage: 4682.04 Meg
+
+Fri Mar 06 15:09:27 2026
+

@@ -1,0 +1,8 @@
+verilog isim_temp "MUX16_4.v"
+verilog isim_temp "Gen_P.v"
+verilog isim_temp "Gen4an.v"
+verilog isim_temp "Gen1ms.v"
+verilog isim_temp "D7seg.v"
+verilog isim_temp "DISPLAY.v"
+verilog isim_temp "DISPLAY_tf.v"
+verilog isim_temp "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v"

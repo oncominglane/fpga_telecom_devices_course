@@ -1,0 +1,228 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+sch2hdl -intstyle ise -family spartan3e -verilog Sch1_lab401_drc.vf -w C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Sch1_lab401 C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.sch C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+sch2sym -intstyle ise -family spartan3e -refsym Sch1_lab401 C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.sch C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.sym 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+sch2verilog -intstyle ise -family spartan3e -tionly {} -tiext tfi -w C:/FRKT/titov/Lab401N/Sch1_lab401.sch Sch1_lab401.tfi 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/titov/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/titov/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+sch2sym -intstyle ise -family spartan3e -refsym Sch1_lab401 C:/FRKT/shev/Lab401N/Sch1_lab401.sch C:/FRKT/shev/Lab401N/Sch1_lab401.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog Sch1_lab401_drc.vf -w C:/FRKT/shev/Lab401N/Sch1_lab401.sch 
+sch2sym -intstyle ise -family spartan3e -refsym Sch1_lab401 C:/FRKT/shev/Lab401N/Sch1_lab401.sch C:/FRKT/shev/Lab401N/Sch1_lab401.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym Sch1_lab401 C:/FRKT/shev/Lab401N/Sch1_lab401.sch C:/FRKT/shev/Lab401N/Sch1_lab401.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog Sch1_lab401_drc.vf -w C:/FRKT/shev/Lab401N/Sch1_lab401.sch 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Sch1_lab401.ngc Sch1_lab401_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Sch1_lab401.ngc Sch1_lab401_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Sch1_lab401.ngc Sch1_lab401_synthesis.v 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Sch1_lab401.ngc Sch1_lab401_synthesis.v 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+netgen -intstyle ise -insert_glbl true -w -dir netgen/synthesis -ofmt verilog -sim Sch1_lab401.ngc Sch1_lab401_synthesis.v 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+sch2sym -intstyle ise -family spartan3e -w -refsym Sch1_lab401 C:/FRKT/shev/Lab401N/Sch1_lab401.sch C:/FRKT/shev/Lab401N/Sch1_lab401.sym 
+sch2hdl -intstyle ise -family spartan3e -verilog Sch1_lab401_drc.vf -w C:/FRKT/shev/Lab401N/Sch1_lab401.sch 
+sch2verilog -intstyle ise -family spartan3e -tionly {} -tiext tfi -w C:/FRKT/shev/Lab401N/Sch1_lab401.sch Sch1_lab401.tfi 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+sch2sym -intstyle ise -family spartan3e -w -refsym Sch1_lab401 C:/FRKT/shev/Lab401N/Sch1_lab401.sch C:/FRKT/shev/Lab401N/Sch1_lab401.sym 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 
+xst -intstyle ise -ifn "C:/FRKT/shev/Lab401N_/Sch1_lab401.xst" -ofn "C:/FRKT/shev/Lab401N_/Sch1_lab401.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch1_lab401.ucf -p xc3s500e-fg320-5 Sch1_lab401.ngc Sch1_lab401.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Sch1_lab401_map.ncd Sch1_lab401.ngd Sch1_lab401.pcf 
+par -w -intstyle ise -ol high -t 1 Sch1_lab401_map.ncd Sch1_lab401.ncd Sch1_lab401.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Sch1_lab401.twx Sch1_lab401.ncd -o Sch1_lab401.twr Sch1_lab401.pcf -ucf Sch1_lab401.ucf 
+bitgen -intstyle ise -f Sch1_lab401.ut Sch1_lab401.ncd 

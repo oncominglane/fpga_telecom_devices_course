@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Gen1ms.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Gen1ms.syr" 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Gen1ms.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Gen1ms.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Gen1ms.v -lang verilog -prj Lab401N -o Gen1ms.spl -module Gen1ms -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Gen1ms.spl C:/FRKT/Golenskikh/Lab401N/Gen1ms.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N/Gen1ms.v -lang verilog -prj Lab401N -o Gen1ms.spl -module Gen1ms -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Gen1ms.spl C:/FRKT/shev/Lab401N/Gen1ms.sym 

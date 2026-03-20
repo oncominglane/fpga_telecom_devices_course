@@ -1,0 +1,134 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sch1_lab401.vf
+// /___/   /\     Timestamp : 03/13/2026 15:39:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/FRKT/shev/Lab401N_/Sch1_lab401.vf -w C:/FRKT/shev/Lab401N_/Sch1_lab401.sch
+//Design Name: Sch1_lab401
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OBUF8_MXILINX_Sch1_lab401(I, 
+                                 O);
+
+    input [7:0] I;
+   output [7:0] O;
+   
+   
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_30 (.I(I[0]), 
+                 .O(O[0]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_31 (.I(I[1]), 
+                 .O(O[1]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_32 (.I(I[2]), 
+                 .O(O[2]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_33 (.I(I[3]), 
+                 .O(O[3]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_34 (.I(I[7]), 
+                 .O(O[7]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_35 (.I(I[6]), 
+                 .O(O[6]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_36 (.I(I[5]), 
+                 .O(O[5]));
+   (* IOSTANDARD = "DEFAULT" *) (* SLEW = "SLOW" *) (* DRIVE = "12" *) 
+   OBUF  I_36_37 (.I(I[4]), 
+                 .O(O[4]));
+endmodule
+`timescale 1ns / 1ps
+
+module Sch1_lab401(BTN0, 
+                   BTN1, 
+                   BTN3, 
+                   F50MHz, 
+                   SW, 
+                   AN, 
+                   LED, 
+                   seg);
+
+    input BTN0;
+    input BTN1;
+    input BTN3;
+    input F50MHz;
+    input [7:0] SW;
+   output [3:0] AN;
+   output [7:0] LED;
+   output [7:0] seg;
+   
+   wire XLXN_68;
+   wire XLXN_86;
+   wire XLXN_189;
+   wire XLXN_199;
+   wire [15:0] XLXN_202;
+   
+   DISPLAY  XLXI_1 (.clk(XLXN_68), 
+                   .dat(XLXN_202[15:0]), 
+                   .PTR(SW[5:4]), 
+                   .AN(AN[3:0]), 
+                   .ce1ms(XLXN_199), 
+                   .SEG(seg[7:0]));
+   Gen_Nms_1s  XLXI_2 (.ce(XLXN_199), 
+                      .clk(XLXN_68), 
+                      .Tmod(SW[7]), 
+                      .CEO(XLXN_86));
+   VCBmCLED  XLXI_3 (.ce(XLXN_189), 
+                    .clk(XLXN_68), 
+                    .clr(BTN0), 
+                    .di(SW[3:0]), 
+                    .L(BTN3), 
+                    .up(SW[6]), 
+                    .CEO(), 
+                    .Q(), 
+                    .TC());
+   VCJ4RE  XLXI_4 (.ce(XLXN_189), 
+                  .clk(XLXN_68), 
+                  .R(BTN0), 
+                  .CEO(), 
+                  .Q(), 
+                  .TC());
+   VCD4RE  XLXI_5 (.ce(XLXN_189), 
+                  .clk(XLXN_68), 
+                  .R(BTN0), 
+                  .CEO(), 
+                  .Q(), 
+                  .TC());
+   VCB4RE  XLXI_6 (.ce(XLXN_189), 
+                  .clk(XLXN_68), 
+                  .R(BTN0), 
+                  .CEO(), 
+                  .Q(), 
+                  .TC());
+   (* HU_SET = "XLXI_7_0" *) 
+   OBUF8_MXILINX_Sch1_lab401  XLXI_7 (.I(SW[7:0]), 
+                                     .O(LED[7:0]));
+   BUFG  XLXI_8 (.I(F50MHz), 
+                .O(XLXN_68));
+   Debouncer  XLXI_100 (.BTN_IN(BTN1), 
+                       .ce1ms(XLXN_86), 
+                       .clk(XLXN_68), 
+                       .BTN_OUT(XLXN_189), 
+                       .Q1(), 
+                       .Q2());
+   new_meas_period  XLXI_105 (.ce1ms(XLXN_199), 
+                             .clk(XLXN_68), 
+                             .rst(BTN0), 
+                             .sig_in(XLXN_86), 
+                             .dat(XLXN_202[15:0]));
+endmodule

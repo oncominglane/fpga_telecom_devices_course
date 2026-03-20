@@ -1,0 +1,5 @@
+set -tmpdir "C:/FRKT/shev/Lab401N_/xst/projnav.tmp"
+set -xsthdpdir "C:/FRKT/shev/Lab401N_/xst"
+elaborate
+-ifn Meas_Period.prj
+-ifmt mixed

@@ -1,0 +1,5 @@
+set -tmpdir "C:/FRKT/shev/Lab401N/xst/projnav.tmp"
+set -xsthdpdir "C:/FRKT/shev/Lab401N/xst"
+elaborate
+-ifn Gen1ms.prj
+-ifmt mixed

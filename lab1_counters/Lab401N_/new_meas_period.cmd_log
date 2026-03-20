@@ -1,0 +1,2 @@
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N_/new_meas_period.v -lang verilog -prj Lab401N -o new_meas_period.spl -module new_meas_period -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w new_meas_period.spl C:/FRKT/shev/Lab401N_/new_meas_period.sym 

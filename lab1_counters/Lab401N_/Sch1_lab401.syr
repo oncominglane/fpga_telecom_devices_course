@@ -1,0 +1,813 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: Sch1_lab401.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sch1_lab401.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sch1_lab401"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Sch1_lab401
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MUX16_4.v" in library work
+Compiling verilog file "Gen_P.v" in library work
+Module <MUX16_4> compiled
+Compiling verilog file "Gen4an.v" in library work
+Module <Gen_P> compiled
+Compiling verilog file "Gen1ms.v" in library work
+Module <Gen4an> compiled
+Compiling verilog file "D7seg.v" in library work
+Module <Gen1ms> compiled
+Compiling verilog file "VCJ4RE.v" in library work
+Module <D7seg> compiled
+Compiling verilog file "VCD4RE.v" in library work
+Module <VCJ4RE> compiled
+Compiling verilog file "VCBmCLED.v" in library work
+Module <VCD4RE> compiled
+Compiling verilog file "VCB4RE.v" in library work
+Module <VCBmCLED> compiled
+Compiling verilog file "new_meas_period.v" in library work
+Module <VCB4RE> compiled
+Compiling verilog file "Gen_Nms_1s.v" in library work
+Module <new_meas_period> compiled
+Compiling verilog file "DISPLAY.v" in library work
+Module <Gen_Nms_1s> compiled
+Compiling verilog file "Debouncer.v" in library work
+Module <DISPLAY> compiled
+Compiling verilog file "Sch1_lab401.vf" in library work
+Module <Debouncer> compiled
+Module <OBUF8_MXILINX_Sch1_lab401> compiled
+Module <Sch1_lab401> compiled
+No errors in compilation
+Analysis of file <"Sch1_lab401.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Sch1_lab401> in library <work>.
+
+Analyzing hierarchy for module <DISPLAY> in library <work>.
+
+Analyzing hierarchy for module <Gen_Nms_1s> in library <work> with parameters.
+	F1Hz = "00000000000000000000000000000001"
+	F1kHz = "00000000000000000000001111101000"
+
+Analyzing hierarchy for module <VCBmCLED> in library <work>.
+
+Analyzing hierarchy for module <VCJ4RE> in library <work>.
+
+Analyzing hierarchy for module <VCD4RE> in library <work>.
+
+Analyzing hierarchy for module <VCB4RE> in library <work>.
+
+Analyzing hierarchy for module <OBUF8_MXILINX_Sch1_lab401> in library <work>.
+
+Analyzing hierarchy for module <Debouncer> in library <work>.
+
+Analyzing hierarchy for module <new_meas_period> in library <work>.
+
+Analyzing hierarchy for module <Gen4an> in library <work>.
+
+Analyzing hierarchy for module <MUX16_4> in library <work>.
+
+Analyzing hierarchy for module <D7seg> in library <work>.
+
+Analyzing hierarchy for module <Gen_P> in library <work>.
+
+Analyzing hierarchy for module <Gen1ms> in library <work> with parameters.
+	F1kHz = "00000000000000000000001111101000"
+	Fclk = "00000010111110101111000010000000"
+
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 31: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 31: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 31: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 34: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 34: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 34: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 37: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 37: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 37: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 40: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 40: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 40: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 43: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 43: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 43: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 46: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 46: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 46: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 49: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 49: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 49: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 52: attribute on instance <DRIVE> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 52: attribute on instance <IOSTANDARD> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+WARNING:Xst:2591 - "Sch1_lab401.vf" line 52: attribute on instance <SLEW> overrides generic/parameter on entity. It is possible that simulator will not take this attribute into account.
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Sch1_lab401>.
+Module <Sch1_lab401> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_7_0" for instance <XLXI_7> in unit <Sch1_lab401>.
+Analyzing module <DISPLAY> in library <work>.
+Module <DISPLAY> is correct for synthesis.
+ 
+Analyzing module <Gen4an> in library <work>.
+Module <Gen4an> is correct for synthesis.
+ 
+Analyzing module <MUX16_4> in library <work>.
+Module <MUX16_4> is correct for synthesis.
+ 
+Analyzing module <D7seg> in library <work>.
+Module <D7seg> is correct for synthesis.
+ 
+Analyzing module <Gen_P> in library <work>.
+Module <Gen_P> is correct for synthesis.
+ 
+Analyzing module <Gen1ms> in library <work>.
+	F1kHz = 32'sb00000000000000000000001111101000
+	Fclk = 32'sb00000010111110101111000010000000
+Module <Gen1ms> is correct for synthesis.
+ 
+Analyzing module <Gen_Nms_1s> in library <work>.
+	F1Hz = 32'sb00000000000000000000000000000001
+	F1kHz = 32'sb00000000000000000000001111101000
+Module <Gen_Nms_1s> is correct for synthesis.
+ 
+Analyzing module <VCBmCLED> in library <work>.
+Module <VCBmCLED> is correct for synthesis.
+ 
+Analyzing module <VCJ4RE> in library <work>.
+Module <VCJ4RE> is correct for synthesis.
+ 
+Analyzing module <VCD4RE> in library <work>.
+Module <VCD4RE> is correct for synthesis.
+ 
+Analyzing module <VCB4RE> in library <work>.
+Module <VCB4RE> is correct for synthesis.
+ 
+Analyzing module <OBUF8_MXILINX_Sch1_lab401> in library <work>.
+Module <OBUF8_MXILINX_Sch1_lab401> is correct for synthesis.
+ 
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_30> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_30> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_30> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_30> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_31> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_31> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_31> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_31> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_32> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_32> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_32> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_32> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_33> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_33> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_33> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_33> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_34> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_34> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_34> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_34> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_35> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_35> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_35> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_35> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_36> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_36> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_36> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_36> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <I_36_37> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "DRIVE =  12" for instance <I_36_37> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <I_36_37> in unit <OBUF8_MXILINX_Sch1_lab401>.
+    Set user-defined property "SLEW =  SLOW" for instance <I_36_37> in unit <OBUF8_MXILINX_Sch1_lab401>.
+Analyzing module <Debouncer> in library <work>.
+Module <Debouncer> is correct for synthesis.
+ 
+Analyzing module <new_meas_period> in library <work>.
+Module <new_meas_period> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Gen_Nms_1s>.
+    Related source file is "Gen_Nms_1s.v".
+    Found 10-bit down counter for signal <cb_Nms>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Gen_Nms_1s> synthesized.
+
+
+Synthesizing Unit <VCBmCLED>.
+    Related source file is "VCBmCLED.v".
+    Found 4-bit updown counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <VCBmCLED> synthesized.
+
+
+Synthesizing Unit <VCJ4RE>.
+    Related source file is "VCJ4RE.v".
+    Found 4-bit register for signal <Q>.
+    Summary:
+	inferred   4 D-type flip-flop(s).
+Unit <VCJ4RE> synthesized.
+
+
+Synthesizing Unit <VCD4RE>.
+    Related source file is "VCD4RE.v".
+    Found 4-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <VCD4RE> synthesized.
+
+
+Synthesizing Unit <VCB4RE>.
+    Related source file is "VCB4RE.v".
+    Found 4-bit up counter for signal <Q>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <VCB4RE> synthesized.
+
+
+Synthesizing Unit <Debouncer>.
+    Related source file is "Debouncer.v".
+    Found 1-bit register for signal <Q1>.
+    Found 1-bit register for signal <BTN_OUT>.
+    Found 1-bit register for signal <Q2>.
+    Summary:
+	inferred   3 D-type flip-flop(s).
+Unit <Debouncer> synthesized.
+
+
+Synthesizing Unit <new_meas_period>.
+    Related source file is "new_meas_period.v".
+WARNING:Xst:646 - Signal <rem> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit up counter for signal <ms_cnt>.
+    Found 16-bit subtractor for signal <old_rem_17$addsub0000> created at line 75.
+    Found 16-bit comparator greatequal for signal <old_rem_17$cmp_ge0000> created at line 73.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0000> created at line 81.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0001> created at line 83.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0002> created at line 85.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0003> created at line 87.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0004> created at line 89.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0005> created at line 91.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0006> created at line 93.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0007> created at line 95.
+    Found 16-bit comparator greatequal for signal <old_rem_18$cmp_ge0008> created at line 97.
+    Found 16-bit subtractor for signal <old_rem_18$share0000>.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0000> created at line 104.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0001> created at line 106.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0002> created at line 108.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0003> created at line 110.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0004> created at line 112.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0005> created at line 114.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0006> created at line 116.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0007> created at line 118.
+    Found 16-bit comparator greatequal for signal <old_rem_19$cmp_ge0008> created at line 120.
+    Found 16-bit subtractor for signal <old_rem_19$share0000>.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0000> created at line 127.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0001> created at line 129.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0002> created at line 131.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0003> created at line 133.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0004> created at line 135.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0005> created at line 137.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0006> created at line 139.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0007> created at line 141.
+    Found 16-bit comparator greatequal for signal <on$cmp_ge0008> created at line 143.
+    Found 16-bit register for signal <period_ms>.
+    Found 1-bit register for signal <sig_d1>.
+    Found 1-bit register for signal <sig_d2>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  18 D-type flip-flop(s).
+	inferred   3 Adder/Subtractor(s).
+	inferred  28 Comparator(s).
+Unit <new_meas_period> synthesized.
+
+
+Synthesizing Unit <Gen4an>.
+    Related source file is "Gen4an.v".
+    Found 1-of-4 decoder for signal <an>.
+    Found 2-bit up counter for signal <q>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 Decoder(s).
+Unit <Gen4an> synthesized.
+
+
+Synthesizing Unit <MUX16_4>.
+    Related source file is "MUX16_4.v".
+    Found 4-bit 4-to-1 multiplexer for signal <do>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <MUX16_4> synthesized.
+
+
+Synthesizing Unit <D7seg>.
+    Related source file is "D7seg.v".
+    Found 16x7-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <D7seg> synthesized.
+
+
+Synthesizing Unit <Gen_P>.
+    Related source file is "Gen_P.v".
+    Found 2-bit comparator equal for signal <seg_P$cmp_eq0000> created at line 23.
+    Summary:
+	inferred   1 Comparator(s).
+Unit <Gen_P> synthesized.
+
+
+Synthesizing Unit <Gen1ms>.
+    Related source file is "Gen1ms.v".
+    Found 16-bit down counter for signal <cb_ms>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Gen1ms> synthesized.
+
+
+Synthesizing Unit <DISPLAY>.
+    Related source file is "DISPLAY.v".
+Unit <DISPLAY> synthesized.
+
+
+Synthesizing Unit <OBUF8_MXILINX_Sch1_lab401>.
+    Related source file is "Sch1_lab401.vf".
+Unit <OBUF8_MXILINX_Sch1_lab401> synthesized.
+
+
+Synthesizing Unit <Sch1_lab401>.
+    Related source file is "Sch1_lab401.vf".
+Unit <Sch1_lab401> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 16-bit subtractor                                     : 3
+# Counters                                             : 7
+ 10-bit down counter                                   : 1
+ 16-bit down counter                                   : 1
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 4-bit updown counter                                  : 1
+# Registers                                            : 7
+ 1-bit register                                        : 5
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 29
+ 16-bit comparator greatequal                          : 28
+ 2-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <XLXI_3> is unconnected in block <Sch1_lab401>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_4> is unconnected in block <Sch1_lab401>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_5> is unconnected in block <Sch1_lab401>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_6> is unconnected in block <Sch1_lab401>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <XLXI_100> is unconnected in block <Sch1_lab401>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 3
+ 16-bit subtractor                                     : 3
+# Counters                                             : 7
+ 10-bit down counter                                   : 1
+ 16-bit down counter                                   : 1
+ 16-bit up counter                                     : 1
+ 2-bit up counter                                      : 1
+ 4-bit up counter                                      : 2
+ 4-bit updown counter                                  : 1
+# Registers                                            : 25
+ Flip-Flops                                            : 25
+# Comparators                                          : 29
+ 16-bit comparator greatequal                          : 28
+ 2-bit comparator equal                                : 1
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+# Decoders                                             : 1
+ 1-of-4 decoder                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2677 - Node <XLXI_4/Q_3> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_4/Q_2> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_4/Q_1> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_4/Q_0> of sequential type is unconnected in block <Sch1_lab401>.
+
+Optimizing unit <Sch1_lab401> ...
+
+Optimizing unit <VCBmCLED> ...
+
+Optimizing unit <new_meas_period> ...
+
+Optimizing unit <OBUF8_MXILINX_Sch1_lab401> ...
+WARNING:Xst:2677 - Node <XLXI_100/Q2> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_100/Q1> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_100/BTN_OUT> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_3/Q_3> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_3/Q_2> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_3/Q_1> of sequential type is unconnected in block <Sch1_lab401>.
+WARNING:Xst:2677 - Node <XLXI_3/Q_0> of sequential type is unconnected in block <Sch1_lab401>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sch1_lab401, actual ratio is 4.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 62
+ Flip-Flops                                            : 62
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sch1_lab401.ngr
+Top Level Output File Name         : Sch1_lab401
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 32
+
+Cell Usage :
+# BELS                             : 687
+#      GND                         : 1
+#      INV                         : 34
+#      LUT1                        : 34
+#      LUT2                        : 14
+#      LUT2_L                      : 1
+#      LUT3                        : 121
+#      LUT4                        : 155
+#      LUT4_D                      : 2
+#      MUXCY                       : 236
+#      MUXF5                       : 4
+#      VCC                         : 1
+#      XORCY                       : 84
+# FlipFlops/Latches                : 62
+#      FD                          : 2
+#      FDE                         : 12
+#      FDR                         : 10
+#      FDRE                        : 32
+#      FDS                         : 6
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 30
+#      IBUF                        : 9
+#      IBUFG                       : 1
+#      OBUF                        : 20
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      196  out of   4656     4%  
+ Number of Slice Flip Flops:             62  out of   9312     0%  
+ Number of 4 input LUTs:                361  out of   9312     3%  
+ Number of IOs:                          32
+ Number of bonded IOBs:                  30  out of    232    12%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+F50MHz                             | IBUFG+BUFG             | 62    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 4.621ns (Maximum Frequency: 216.389MHz)
+   Minimum input arrival time before clock: 4.315ns
+   Maximum output required time after clock: 34.334ns
+   Maximum combinational path delay: 5.776ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'F50MHz'
+  Clock period: 4.621ns (frequency: 216.389MHz)
+  Total number of paths / destination ports: 1241 / 138
+-------------------------------------------------------------------------
+Delay:               4.621ns (Levels of Logic = 3)
+  Source:            XLXI_1/DD5/cb_ms_0 (FF)
+  Destination:       XLXI_105/sig_d1 (FF)
+  Source Clock:      F50MHz rising
+  Destination Clock: F50MHz rising
+
+  Data Path: XLXI_1/DD5/cb_ms_0 to XLXI_105/sig_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  XLXI_1/DD5/cb_ms_0 (XLXI_1/DD5/cb_ms_0)
+     LUT4_D:I0->O          1   0.612   0.509  XLXI_1/DD5/ce1ms11 (XLXI_1/DD5/ce1ms11)
+     LUT4:I0->O           17   0.612   0.962  XLXI_1/DD5/ce1ms75 (XLXN_199)
+     LUT2:I1->O            1   0.612   0.000  XLXI_2/CEO1 (XLXN_86)
+     FD:D                      0.268          XLXI_105/sig_d1
+    ----------------------------------------
+    Total                      4.621ns (2.618ns logic, 2.003ns route)
+                                       (56.7% logic, 43.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'F50MHz'
+  Total number of paths / destination ports: 40 / 40
+-------------------------------------------------------------------------
+Offset:              4.315ns (Levels of Logic = 2)
+  Source:            BTN0 (PAD)
+  Destination:       XLXI_105/ms_cnt_15 (FF)
+  Destination Clock: F50MHz rising
+
+  Data Path: BTN0 to XLXI_105/ms_cnt_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            17   1.106   0.923  BTN0_IBUF (BTN0_IBUF)
+     LUT3:I2->O           16   0.612   0.879  XLXI_105/ms_cnt_or00001 (XLXI_105/ms_cnt_or0000)
+     FDRE:R                    0.795          XLXI_105/ms_cnt_0
+    ----------------------------------------
+    Total                      4.315ns (2.513ns logic, 1.802ns route)
+                                       (58.2% logic, 41.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'F50MHz'
+  Total number of paths / destination ports: 22780545028 / 12
+-------------------------------------------------------------------------
+Offset:              34.334ns (Levels of Logic = 57)
+  Source:            XLXI_105/period_ms_3 (FF)
+  Destination:       seg<3> (PAD)
+  Source Clock:      F50MHz rising
+
+  Data Path: XLXI_105/period_ms_3 to seg<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             8   0.514   0.795  XLXI_105/period_ms_3 (XLXI_105/period_ms_3)
+     LUT1:I0->O            1   0.612   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<0>_rt (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<0> (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<1> (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<2> (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<3> (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<4> (XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<4>)
+     MUXCY:CI->O          50   0.399   1.230  XLXI_105/Mcompar_old_rem_17_cmp_ge0000_cy<5> (XLXN_202<12>)
+     LUT3:I0->O           11   0.612   0.945  XLXI_105/_old_rem_17<4>1 (XLXI_105/_old_rem_17<4>)
+     LUT4:I0->O            1   0.612   0.000  XLXI_105/Mcompar_old_rem_18_cmp_ge0000_lut<2>2 (XLXI_105/Mcompar_old_rem_18_cmp_ge0000_lut<2>2)
+     MUXCY:S->O            1   0.404   0.000  XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<2>_3 (XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<2>4)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<3>_3 (XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<3>4)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<4>_3 (XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<4>2)
+     MUXCY:CI->O           7   0.399   0.754  XLXI_105/Mcompar_old_rem_18_cmp_ge0000_cy<5>_1 (XLXI_105/old_rem_18_cmp_ge0004)
+     LUT2:I0->O            2   0.612   0.383  XLXI_105/old_rem_18_mux0000<8>111 (XLXI_105/N36)
+     LUT4:I3->O            1   0.612   0.387  XLXI_105/old_rem_18_mux0000<8>_SW0 (N29)
+     LUT4:I2->O            1   0.612   0.387  XLXI_105/Msub_old_rem_18_share0000_lut<7>_SW0 (N43)
+     LUT4:I2->O            1   0.612   0.000  XLXI_105/Msub_old_rem_18_share0000_lut<7> (XLXI_105/Msub_old_rem_18_share0000_lut<7>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<7> (XLXI_105/Msub_old_rem_18_share0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<8> (XLXI_105/Msub_old_rem_18_share0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<9> (XLXI_105/Msub_old_rem_18_share0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<10> (XLXI_105/Msub_old_rem_18_share0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<11> (XLXI_105/Msub_old_rem_18_share0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<12> (XLXI_105/Msub_old_rem_18_share0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<13> (XLXI_105/Msub_old_rem_18_share0000_cy<13>)
+     MUXCY:CI->O           0   0.052   0.000  XLXI_105/Msub_old_rem_18_share0000_cy<14> (XLXI_105/Msub_old_rem_18_share0000_cy<14>)
+     XORCY:CI->O           5   0.699   0.568  XLXI_105/Msub_old_rem_18_share0000_xor<15> (XLXI_105/old_rem_18_share0000<15>)
+     LUT3:I2->O           11   0.612   0.823  XLXI_105/_old_rem_18<15>1 (XLXI_105/_old_rem_18<15>)
+     LUT3:I2->O            1   0.612   0.000  XLXI_105/Mcompar_old_rem_19_cmp_ge0000_lut<3>6 (XLXI_105/Mcompar_old_rem_19_cmp_ge0000_lut<3>6)
+     MUXCY:S->O            6   0.752   0.721  XLXI_105/Mcompar_old_rem_19_cmp_ge0000_cy<3>_5 (XLXI_105/old_rem_19_cmp_ge0006)
+     LUT4:I0->O            1   0.612   0.509  XLXI_105/old_rem_19_mux0000<14>12 (XLXI_105/old_rem_19_mux0000<14>12)
+     LUT4:I0->O            1   0.612   0.387  XLXI_105/old_rem_19_mux0000<14>34 (XLXI_105/old_rem_19_mux0000<14>34)
+     LUT3:I2->O            1   0.612   0.000  XLXI_105/Msub_old_rem_19_share0000_lut<1> (XLXI_105/Msub_old_rem_19_share0000_lut<1>)
+     MUXCY:S->O            1   0.404   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<1> (XLXI_105/Msub_old_rem_19_share0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<2> (XLXI_105/Msub_old_rem_19_share0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<3> (XLXI_105/Msub_old_rem_19_share0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<4> (XLXI_105/Msub_old_rem_19_share0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<5> (XLXI_105/Msub_old_rem_19_share0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<6> (XLXI_105/Msub_old_rem_19_share0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<7> (XLXI_105/Msub_old_rem_19_share0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<8> (XLXI_105/Msub_old_rem_19_share0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<9> (XLXI_105/Msub_old_rem_19_share0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<10> (XLXI_105/Msub_old_rem_19_share0000_cy<10>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<11> (XLXI_105/Msub_old_rem_19_share0000_cy<11>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<12> (XLXI_105/Msub_old_rem_19_share0000_cy<12>)
+     MUXCY:CI->O           1   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<13> (XLXI_105/Msub_old_rem_19_share0000_cy<13>)
+     MUXCY:CI->O           0   0.052   0.000  XLXI_105/Msub_old_rem_19_share0000_cy<14> (XLXI_105/Msub_old_rem_19_share0000_cy<14>)
+     XORCY:CI->O           5   0.699   0.568  XLXI_105/Msub_old_rem_19_share0000_xor<15> (XLXI_105/old_rem_19_share0000<15>)
+     LUT3:I2->O            5   0.612   0.568  XLXI_105/_old_rem_19<15>1 (XLXI_105/_old_rem_19<15>)
+     LUT3:I2->O            1   0.612   0.000  XLXI_105/Mcompar_on_cmp_ge0000_lut<4>7 (XLXI_105/Mcompar_on_cmp_ge0000_lut<4>7)
+     MUXCY:S->O            1   0.752   0.509  XLXI_105/Mcompar_on_cmp_ge0000_cy<4>_6 (XLXI_105/on_cmp_ge0008)
+     LUT4:I0->O            1   0.612   0.509  XLXI_105/on<0>11 (XLXI_105/on<0>11)
+     LUT4:I0->O            1   0.612   0.509  XLXI_105/on<0>30 (XLXI_105/on<0>30)
+     LUT3:I0->O            1   0.612   0.426  XLXI_105/on<0>50 (XLXN_202<0>)
+     LUT3:I1->O            1   0.612   0.000  XLXI_1/DD2/Mmux_do_4 (XLXI_1/DD2/Mmux_do_4)
+     MUXF5:I0->O           7   0.278   0.754  XLXI_1/DD2/Mmux_do_2_f5 (XLXI_1/Dig<0>)
+     LUT4:I0->O            1   0.612   0.357  XLXI_1/DD3/Mrom_seg31 (seg_3_OBUF)
+     OBUF:I->O                 3.169          seg_3_OBUF (seg<3>)
+    ----------------------------------------
+    Total                     34.334ns (22.245ns logic, 12.089ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 10 / 9
+-------------------------------------------------------------------------
+Delay:               5.776ns (Levels of Logic = 3)
+  Source:            SW<4> (PAD)
+  Destination:       seg<7> (PAD)
+
+  Data Path: SW<4> to seg<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.106   0.532  SW_4_IBUF (SW_4_IBUF)
+     LUT4:I0->O            1   0.612   0.357  XLXI_1/DD4/seg_P1 (seg_7_OBUF)
+     OBUF:I->O                 3.169          seg_7_OBUF (seg<7>)
+    ----------------------------------------
+    Total                      5.776ns (4.887ns logic, 0.889ns route)
+                                       (84.6% logic, 15.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.89 secs
+ 
+--> 
+
+Total memory usage is 4513316 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   41 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

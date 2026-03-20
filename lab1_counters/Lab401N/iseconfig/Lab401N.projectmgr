@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Lab401N" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/D7seg_tf C:|FRKT|Golenskikh|Lab401N|D7seg_tf.v</ClosedNode>
+         <ClosedNode>/DISPLAY C:|FRKT|Golenskikh|Lab401N|DISPLAY.v</ClosedNode>
+         <ClosedNode>/DISPLAY_tf C:|FRKT|Golenskikh|Lab401N|DISPLAY_tf.v/uut - DISPLAY</ClosedNode>
+         <ClosedNode>/Gen1ms_tf C:|FRKT|Golenskikh|Lab401N|Gen1ms_tf.v</ClosedNode>
+         <ClosedNode>/Gen4an_tf C:|FRKT|Golenskikh|Lab401N|Gen4an_tf.v</ClosedNode>
+         <ClosedNode>/Gen_P_tf C:|FRKT|Golenskikh|Lab401N|Gen_P_tf.v</ClosedNode>
+         <ClosedNode>/MUX16_4_tf C:|FRKT|Golenskikh|Lab401N|MUX16_4_tf.v</ClosedNode>
+         <ClosedNode>/VCBDmSE_test_fixture C:|FRKT|Golenskikh|Lab401N|VCBDmSE_test_fixture.v</ClosedNode>
+         <ClosedNode>/VCBmCLED_tf C:|FRKT|Golenskikh|Lab401N|VCBmCLED_tf.v</ClosedNode>
+         <ClosedNode>/VCD4RE_test_fixture C:|FRKT|Golenskikh|Lab401N|VCD4RE_test_fixture.v</ClosedNode>
+         <ClosedNode>/VCGrey4RE_tf C:|FRKT|Golenskikh|Lab401N|VCGrey4RE_tf.v</ClosedNode>
+         <ClosedNode>/VCJ4RE_tf C:|FRKT|Golenskikh|Lab401N|VCJ4RE_tf.v</ClosedNode>
+         <ClosedNode>/test_fixture C:|FRKT|Golenskikh|Lab401N|test_fixture.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Sch1_lab401 (C:/FRKT/shev/Lab401N/Sch1_lab401.sch)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000011f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000011f0000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>Sch1_lab401 (C:/FRKT/shev/Lab401N/Sch1_lab401.sch)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Compile HDL Simulation Libraries</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000240000000010000000100000000000000000000000064ffffffff000000810000000000000001000002400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Compile HDL Simulation Libraries</CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000018e000000040101000100000000000000000000000064ffffffff000000810000000000000004000000a00000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Sch1_lab401.sch</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >2</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000000000000001000000000000000000000000000000000000022f000000010001000100000000000000000000000064ffffffff0000008100000000000000010000022f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Sch1_lab401.sch</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000240000000010000000100000000000000000000000064ffffffff000000810000000000000001000002400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_BMM" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/D7seg_tf C:|FRKT|Golenskikh|Lab401N|D7seg_tf.v</ClosedNode>
+         <ClosedNode>/DISPLAY_tf C:|FRKT|Golenskikh|Lab401N|DISPLAY_tf.v</ClosedNode>
+         <ClosedNode>/Gen1ms_tf C:|FRKT|Golenskikh|Lab401N|Gen1ms_tf.v</ClosedNode>
+         <ClosedNode>/Gen4an_tf C:|FRKT|Golenskikh|Lab401N|Gen4an_tf.v</ClosedNode>
+         <ClosedNode>/Gen_Nms_1s_tf C:|FRKT|Golenskikh|Lab401N|Gen_Nms_1s_tf.v</ClosedNode>
+         <ClosedNode>/Gen_P_tf C:|FRKT|Golenskikh|Lab401N|Gen_P_tf.v</ClosedNode>
+         <ClosedNode>/MUX16_4_tf C:|FRKT|Golenskikh|Lab401N|MUX16_4_tf.v</ClosedNode>
+         <ClosedNode>/Sch1_lab401 C:|FRKT|Golenskikh|Lab401N|Sch1_lab401.sch/XLXI_1 - DISPLAY</ClosedNode>
+         <ClosedNode>/Sch1_lab401 C:|FRKT|shev|Lab401N|Sch1_lab401.sch/XLXI_1 - DISPLAY</ClosedNode>
+         <ClosedNode>/VCB4RE_tf C:|FRKT|Golenskikh|Lab401N|VCB4RE_tf.v</ClosedNode>
+         <ClosedNode>/VCBDmSE_test_fixture C:|FRKT|Golenskikh|Lab401N|VCBDmSE_test_fixture.v</ClosedNode>
+         <ClosedNode>/VCBmCLED_tf C:|FRKT|Golenskikh|Lab401N|VCBmCLED_tf.v</ClosedNode>
+         <ClosedNode>/VCD4RE_test_fixture C:|FRKT|Golenskikh|Lab401N|VCD4RE_test_fixture.v</ClosedNode>
+         <ClosedNode>/VCGrey4RE_tf C:|FRKT|Golenskikh|Lab401N|VCGrey4RE_tf.v</ClosedNode>
+         <ClosedNode>/VCJ4RE_tf C:|FRKT|Golenskikh|Lab401N|VCJ4RE_tf.v</ClosedNode>
+         <ClosedNode>/test_fixture C:|FRKT|Golenskikh|Lab401N|test_fixture.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>VCD4RE_test_fixture (C:/FRKT/shev/Lab401N/VCD4RE_test_fixture.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >28</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000140000000020000000000000000000000000200000064ffffffff000000810000000300000002000001400000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>VCD4RE_test_fixture (C:/FRKT/shev/Lab401N/VCD4RE_test_fixture.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Design Utilities</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000240000000010000000100000000000000000000000064ffffffff000000810000000000000001000002400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Design Utilities</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000240000000010000000100000000000000000000000064ffffffff000000810000000000000001000002400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001620000019401000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" />
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Implement Design/Map</ClosedNode>
+         <ClosedNode>Implement Design/Place &amp; Route</ClosedNode>
+         <ClosedNode>Implement Design/Translate</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Generate Programming File</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >10</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000022f000000010000000100000000000000000000000064ffffffff0000008100000000000000010000022f0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Generate Programming File</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Edit Constraints (Text)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000000000000000000240000000010000000100000000000000000000000064ffffffff000000810000000000000001000002400000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Edit Constraints (Text)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>Simulate Behavioral Model</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f9000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f90000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Simulate Behavioral Model</CurrentItem>
+   </ItemView>
+</Project>

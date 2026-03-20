@@ -1,0 +1,13 @@
+[Inputs]
+ce
+clk
+r
+[Outputs]
+Q0
+Q1
+TC
+CEO
+[BiDir]
+[ATTRIBUTES]
+VeriModel VCB2RE
+

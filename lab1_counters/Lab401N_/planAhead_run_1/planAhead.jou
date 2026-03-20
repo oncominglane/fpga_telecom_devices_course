@@ -1,0 +1,11 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Fri Feb 20 09:53:23 2026
+# Process ID: 2156
+# Log file: C:/FRKT/shev/Lab401N/planAhead_run_1/planAhead.log
+# Journal file: C:/FRKT/shev/Lab401N/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/FRKT/shev/Lab401N/pa.fromHdl.tcl
+update_compile_order -fileset sim_1

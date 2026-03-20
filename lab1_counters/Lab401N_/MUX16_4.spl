@@ -1,0 +1,9 @@
+[Inputs]
+=dat[15:0]=
+=adr[1:0]=
+[Outputs]
+=do[3:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel MUX16_4
+

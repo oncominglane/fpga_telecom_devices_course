@@ -1,0 +1,21 @@
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Debouncer.v -lang verilog -prj Lab401N -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debouncer.spl C:/FRKT/Golenskikh/Lab401N/Debouncer.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Debouncer.v -lang verilog -prj Lab401N -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debouncer.spl C:/FRKT/Golenskikh/Lab401N/Debouncer.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Debouncer.v -lang verilog -prj Lab401N -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debouncer.spl C:/FRKT/Golenskikh/Lab401N/Debouncer.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-5 Debouncer.ngc Debouncer.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o Debouncer_map.ncd Debouncer.ngd Debouncer.pcf 
+par -w -intstyle ise -ol high -t 1 Debouncer_map.ncd Debouncer.ncd Debouncer.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml Debouncer.twx Debouncer.ncd -o Debouncer.twr Debouncer.pcf 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Debouncer.v -lang verilog -prj Lab401N -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debouncer.spl C:/FRKT/Golenskikh/Lab401N/Debouncer.sym 
+xst -intstyle ise -ifn "C:/FRKT/Golenskikh/Lab401N/Debouncer.xst" -ofn "C:/FRKT/Golenskikh/Lab401N/Debouncer.syr" 
+vhdtdtfi -lib work C:/FRKT/Golenskikh/Lab401N/Debouncer.v -lang verilog -prj Lab401N -o Debouncer.spl -module Debouncer -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e Debouncer.spl C:/FRKT/Golenskikh/Lab401N/Debouncer.sym 

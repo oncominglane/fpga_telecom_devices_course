@@ -1,0 +1,7 @@
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N_/meas_period.v -lang verilog -prj Lab401N -o meas_period.spl -module meas_period -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w meas_period.spl C:/FRKT/shev/Lab401N_/meas_period.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N_/meas_period.v -lang verilog -prj Lab401N -o Meas_Period.spl -module Meas_Period -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Meas_Period.spl C:/FRKT/shev/Lab401N_/Meas_Period.sym 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N_/meas_period.v -lang verilog -prj Lab401N -o meas_period.spl -module meas_period -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+vhdtdtfi -lib work C:/FRKT/shev/Lab401N_/meas_period.v -lang verilog -prj Lab401N -o Meas_Period.spl -module Meas_Period -template C:/Xilinx/14.7/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e -w Meas_Period.spl C:/FRKT/shev/Lab401N_/Meas_Period.sym 

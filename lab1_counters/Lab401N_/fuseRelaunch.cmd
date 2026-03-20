@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/FRKT/shev/Lab401N/VCD4RE_test_fixture_isim_beh.exe" -prj "C:/FRKT/shev/Lab401N/VCD4RE_test_fixture_beh.prj" "VCD4RE_test_fixture" "work.glbl" 
