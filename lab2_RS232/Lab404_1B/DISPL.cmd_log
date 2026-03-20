@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.syr" 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.syr" 
+vhdtdtfi -lib work D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.v -lang verilog -prj Lab404_2016 -o DISPL.spl -module DISPL -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DISPL.spl D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/DISPL.sym 

@@ -1,0 +1,225 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Sch_LAB404_1B.vf
+// /___/   /\     Timestamp : 01/10/2017 11:23:08
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Proj2017/MIPT/LABs/FPGA_ISE14/Lab404_1B/Sch_LAB404_1B.vf -w D:/Proj2017/MIPT/LABs/FPGA_ISE14/Lab404_1B/Sch_LAB404_1B.sch
+//Design Name: Sch_LAB404_1B
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD8RE_MXILINX_Sch_LAB404_1B(C, 
+                                   CE, 
+                                   D, 
+                                   R, 
+                                   Q);
+
+    input C;
+    input CE;
+    input [7:0] D;
+    input R;
+   output [7:0] Q;
+   
+   
+   FDRE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .D(D[0]), 
+              .R(R), 
+              .Q(Q[0]));
+   FDRE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .D(D[1]), 
+              .R(R), 
+              .Q(Q[1]));
+   FDRE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .D(D[2]), 
+              .R(R), 
+              .Q(Q[2]));
+   FDRE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .D(D[3]), 
+              .R(R), 
+              .Q(Q[3]));
+   FDRE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .D(D[4]), 
+              .R(R), 
+              .Q(Q[4]));
+   FDRE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .D(D[5]), 
+              .R(R), 
+              .Q(Q[5]));
+   FDRE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .D(D[6]), 
+              .R(R), 
+              .Q(Q[6]));
+   FDRE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .D(D[7]), 
+              .R(R), 
+              .Q(Q[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_Sch_LAB404_1B(D0, 
+                                  D1, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module Sch_LAB404_1B(BTN0, 
+                     BTN3, 
+                     F50MHz, 
+                     JD3, 
+                     RXD, 
+                     SW, 
+                     AN, 
+                     JB2, 
+                     JB3, 
+                     JB4, 
+                     JB7, 
+                     JB8, 
+                     JC1, 
+                     JC2, 
+                     JC3, 
+                     JC4, 
+                     JC7, 
+                     JC8, 
+                     JD4, 
+                     LED0, 
+                     LED7, 
+                     seg, 
+                     seg_P, 
+                     TXD);
+
+    input BTN0;
+    input BTN3;
+    input F50MHz;
+    input JD3;
+    input RXD;
+    input [7:0] SW;
+   output [3:0] AN;
+   output JB2;
+   output JB3;
+   output JB4;
+   output JB7;
+   output JB8;
+   output JC1;
+   output JC2;
+   output JC3;
+   output JC4;
+   output JC7;
+   output JC8;
+   output JD4;
+   output LED0;
+   output LED7;
+   output [6:0] seg;
+   output seg_P;
+   output TXD;
+   
+   wire bf_TXD;
+   wire ce1ms;
+   wire clk;
+   wire [7:0] RX_DAT;
+   wire [7:0] XLXN_1;
+   wire XLXN_4;
+   wire XLXN_116;
+   wire XLXN_153;
+   wire LED0_DUMMY;
+   wire LED7_DUMMY;
+   wire TXD_DUMMY;
+   
+   assign LED0 = LED0_DUMMY;
+   assign LED7 = LED7_DUMMY;
+   assign TXD = TXD_DUMMY;
+   UTXD1B  XLXI_1 (.clk(clk), 
+                  .dat(SW[7:0]), 
+                  .st(ce1ms), 
+                  .cb_bit(), 
+                  .ce_stop(), 
+                  .ce_tact(JB8), 
+                  .en_tx_byte(LED7_DUMMY), 
+                  .sr_dat(), 
+                  .TXD(TXD_DUMMY), 
+                  .T_dat(JB4), 
+                  .T_start(JB3), 
+                  .T_stop(JB7));
+   URXD1B  XLXI_2 (.clk(clk), 
+                  .Inp(XLXN_116), 
+                  .cb_bit(), 
+                  .ce_bit(), 
+                  .ce_tact(JC8), 
+                  .en_rx_byte(LED0_DUMMY), 
+                  .ok_rx_byte(XLXN_4), 
+                  .RXD(JC1), 
+                  .sr_dat(XLXN_1[7:0]), 
+                  .start(), 
+                  .T_dat(JC4), 
+                  .T_start(JC3), 
+                  .T_stop(JC7));
+   (* HU_SET = "XLXI_3_1" *) 
+   FD8RE_MXILINX_Sch_LAB404_1B  XLXI_3 (.C(clk), 
+                                       .CE(XLXN_4), 
+                                       .D(XLXN_1[7:0]), 
+                                       .R(BTN0), 
+                                       .Q(RX_DAT[7:0]));
+   (* HU_SET = "XLXI_5_0" *) 
+   M2_1_MXILINX_Sch_LAB404_1B  XLXI_5 (.D0(XLXN_153), 
+                                      .D1(bf_TXD), 
+                                      .S0(BTN3), 
+                                      .O(XLXN_116));
+   BUF  XLXI_6 (.I(TXD_DUMMY), 
+               .O(bf_TXD));
+   DISPL  XLXI_8 (.clk(clk), 
+                 .HB(SW[7:0]), 
+                 .LB(RX_DAT[7:0]), 
+                 .AN(AN[3:0]), 
+                 .ce1ms(ce1ms), 
+                 .seg(seg[6:0]), 
+                 .seg_P(seg_P));
+   BUF  XLXI_11 (.I(TXD_DUMMY), 
+                .O(JD4));
+   BUF  XLXI_12 (.I(LED7_DUMMY), 
+                .O(JB2));
+   BUF  XLXI_13 (.I(LED0_DUMMY), 
+                .O(JC2));
+   BUFG  XLXI_14 (.I(F50MHz), 
+                 .O(clk));
+   AND2  XLXI_15 (.I0(RXD), 
+                 .I1(JD3), 
+                 .O(XLXN_153));
+endmodule

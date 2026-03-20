@@ -1,0 +1,8 @@
+Release 14.4 Drc P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Tue Jan 10 11:23:56 2017
+
+drc -z Sch_LAB404_1B.ncd Sch_LAB404_1B.pcf
+
+DRC detected 0 errors and 0 warnings.

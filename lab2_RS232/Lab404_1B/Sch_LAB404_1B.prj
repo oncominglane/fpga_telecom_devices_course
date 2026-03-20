@@ -1,0 +1,4 @@
+verilog work "UTXD1B.v"
+verilog work "URXD1B.v"
+verilog work "DISPL.v"
+verilog work "Sch_LAB404_1B.vf"

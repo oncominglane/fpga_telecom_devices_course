@@ -1,0 +1,13 @@
+[Inputs]
+clk
+=HB[7:0]=
+=LB[7:0]=
+[Outputs]
+seg_P
+ce1ms
+=AN[3:0]=
+=seg[6:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel DISPL
+

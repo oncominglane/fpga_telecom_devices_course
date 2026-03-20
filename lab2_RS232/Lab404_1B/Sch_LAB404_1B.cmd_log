@@ -1,0 +1,28 @@
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sch_LAB404_1B.ngc Sch_LAB404_1B.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ngd Sch_LAB404_1B.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ncd Sch_LAB404_1B.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sch_LAB404_1B.twx Sch_LAB404_1B.ncd -o Sch_LAB404_1B.twr Sch_LAB404_1B.pcf 
+bitgen -intstyle ise -f Sch_LAB404_1B.ut Sch_LAB404_1B.ncd 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch_Lab404.ucf -p xc3s500e-fg320-4 Sch_LAB404_1B.ngc Sch_LAB404_1B.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch_Lab404.ucf -p xc3s500e-fg320-4 Sch_LAB404_1B.ngc Sch_LAB404_1B.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ngd Sch_LAB404_1B.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ncd Sch_LAB404_1B.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sch_LAB404_1B.twx Sch_LAB404_1B.ncd -o Sch_LAB404_1B.twr Sch_LAB404_1B.pcf -ucf Sch_Lab404.ucf 
+bitgen -intstyle ise -f Sch_LAB404_1B.ut Sch_LAB404_1B.ncd 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/Sch_LAB404_1B.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch_Lab404.ucf -p xc3s500e-fg320-4 Sch_LAB404_1B.ngc Sch_LAB404_1B.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ngd Sch_LAB404_1B.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ncd Sch_LAB404_1B.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sch_LAB404_1B.twx Sch_LAB404_1B.ncd -o Sch_LAB404_1B.twr Sch_LAB404_1B.pcf -ucf Sch_Lab404.ucf 
+bitgen -intstyle ise -f Sch_LAB404_1B.ut Sch_LAB404_1B.ncd 
+xst -intstyle ise -ifn "D:/Proj2017/MIPT/LABs/FPGA_ISE14/Lab404_1B/Sch_LAB404_1B.xst" -ofn "D:/Proj2017/MIPT/LABs/FPGA_ISE14/Lab404_1B/Sch_LAB404_1B.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Sch_Lab404.ucf -p xc3s500e-fg320-4 Sch_LAB404_1B.ngc Sch_LAB404_1B.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ngd Sch_LAB404_1B.pcf 
+par -w -intstyle ise -ol high -t 1 Sch_LAB404_1B_map.ncd Sch_LAB404_1B.ncd Sch_LAB404_1B.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Sch_LAB404_1B.twx Sch_LAB404_1B.ncd -o Sch_LAB404_1B.twr Sch_LAB404_1B.pcf -ucf Sch_Lab404.ucf 
+bitgen -intstyle ise -f Sch_LAB404_1B.ut Sch_LAB404_1B.ncd 

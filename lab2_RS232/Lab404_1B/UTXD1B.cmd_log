@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/UTXD1B.xst" -ofn "D:/Proj2016/MIPT/LABs/FPGA_ISE14/Lab404_2016/UTXD1B.syr" 

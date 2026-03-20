@@ -1,0 +1,11 @@
+# PROMGEN: Xilinx Prom Generator P.49d
+# Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+SOFTWARE_VERSION P.49d
+DATE            01/10/2017 - 11:26
+SOURCE          D:\Proj2017\MIPT\LABs\FPGA_ISE14\Lab404_1B\10jan.mcs
+DEVICE          XCF04S
+DATA_WIDTH      8
+FILL_DATA       0xFF
+SIGNATURE       0x03AA636A
+START_ADDRESS   0x00000000 END_ADDRESS 0x0004547F DIRECTION_UP   "D:/Proj2017/MIPT/LABs/FPGA_ISE14/Lab404_1B/sch_lab404_1b.bit" 3s500efg320
