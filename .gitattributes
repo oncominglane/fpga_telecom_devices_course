@@ -1,0 +1,3 @@
+*.v linguist-detectable=true
+*.c linguist-vendored
+*.html linguist-vendored   
