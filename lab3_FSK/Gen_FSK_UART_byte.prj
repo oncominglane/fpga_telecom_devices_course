@@ -1,0 +1,6 @@
+verilog work "Gen_Tce.v"
+verilog work "Gen_SIN.v"
+verilog work "Gen_PW_1bit.v"
+verilog work "UTXD1B.v"
+verilog work "Gen_FSK_1bit.v"
+verilog work "Gen_FSK_UART_byte.v"

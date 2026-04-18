@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<symbol version="7" name="RX_FSK_UART_1byte">
+    <symboltype>BLOCK</symboltype>
+    <timestamp>2017-12-5T17:35:27</timestamp>
+    <attr value="RX_FSK_UART_1byte" name="VeriModel" />
+    <pin polarity="Input" x="0" y="-1120" name="clk" />
+    <pin polarity="Input" x="0" y="-576" name="st" />
+    <pin polarity="Input" x="0" y="-32" name="FSK_SH(11:0)" />
+    <pin polarity="Output" x="480" y="-1120" name="OCD" />
+    <pin polarity="Output" x="480" y="-1056" name="ce_ADC" />
+    <pin polarity="Output" x="480" y="-992" name="en_rx_byte" />
+    <pin polarity="Output" x="480" y="-928" name="ok_rx_byte" />
+    <pin polarity="Output" x="480" y="-864" name="UART_ce_tact" />
+    <pin polarity="Output" x="480" y="-800" name="URXD" />
+    <pin polarity="Output" x="480" y="-736" name="en_rx" />
+    <pin polarity="Output" x="480" y="-672" name="ce_start" />
+    <pin polarity="Output" x="480" y="-608" name="FSK_ce_tact" />
+    <pin polarity="Output" x="480" y="-544" name="DFSK_SH(11:0)" />
+    <pin polarity="Output" x="480" y="-480" name="mod_DFSK(11:0)" />
+    <pin polarity="Output" x="480" y="-416" name="AMP(11:0)" />
+    <pin polarity="Output" x="480" y="-352" name="SH(12:0)" />
+    <pin polarity="Output" x="480" y="-288" name="UART_dat_rx(7:0)" />
+    <pin polarity="Output" x="480" y="-224" name="UART_cb_bit(3:0)" />
+    <pin polarity="Output" x="480" y="-160" name="cb_tact(6:0)" />
+    <pin polarity="Output" x="480" y="-96" name="Pic_Tocd(5:0)" />
+    <pin polarity="Output" x="480" y="-32" name="bf_Pic_Tocd(5:0)" />
+    <graph>
+        <rect width="352" x="64" y="-1152" height="1152" />
+        <attrtext style="alignment:BCENTER;fontsize:56;fontname:Arial" attrname="SymbolName" x="240" y="-1160" type="symbol" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-1120" type="pin clk" />
+        <line x2="0" y1="-1120" y2="-1120" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-576" type="pin st" />
+        <line x2="0" y1="-576" y2="-576" x1="64" />
+        <attrtext style="fontsize:24;fontname:Arial" attrname="PinName" x="72" y="-32" type="pin FSK_SH(11:0)" />
+        <rect width="64" x="0" y="-44" height="24" />
+        <line x2="0" y1="-32" y2="-32" x1="64" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-1120" type="pin OCD" />
+        <line x2="480" y1="-1120" y2="-1120" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-1056" type="pin ce_ADC" />
+        <line x2="480" y1="-1056" y2="-1056" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-992" type="pin en_rx_byte" />
+        <line x2="480" y1="-992" y2="-992" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-928" type="pin ok_rx_byte" />
+        <line x2="480" y1="-928" y2="-928" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-864" type="pin UART_ce_tact" />
+        <line x2="480" y1="-864" y2="-864" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-800" type="pin URXD" />
+        <line x2="480" y1="-800" y2="-800" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-736" type="pin en_rx" />
+        <line x2="480" y1="-736" y2="-736" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-672" type="pin ce_start" />
+        <line x2="480" y1="-672" y2="-672" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-608" type="pin FSK_ce_tact" />
+        <line x2="480" y1="-608" y2="-608" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-544" type="pin DFSK_SH(11:0)" />
+        <rect width="64" x="416" y="-556" height="24" />
+        <line x2="480" y1="-544" y2="-544" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-480" type="pin mod_DFSK(11:0)" />
+        <rect width="64" x="416" y="-492" height="24" />
+        <line x2="480" y1="-480" y2="-480" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-416" type="pin AMP(11:0)" />
+        <rect width="64" x="416" y="-428" height="24" />
+        <line x2="480" y1="-416" y2="-416" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-352" type="pin SH(12:0)" />
+        <rect width="64" x="416" y="-364" height="24" />
+        <line x2="480" y1="-352" y2="-352" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-288" type="pin UART_dat_rx(7:0)" />
+        <rect width="64" x="416" y="-300" height="24" />
+        <line x2="480" y1="-288" y2="-288" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-224" type="pin UART_cb_bit(3:0)" />
+        <rect width="64" x="416" y="-236" height="24" />
+        <line x2="480" y1="-224" y2="-224" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-160" type="pin cb_tact(6:0)" />
+        <rect width="64" x="416" y="-172" height="24" />
+        <line x2="480" y1="-160" y2="-160" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-96" type="pin Pic_Tocd(5:0)" />
+        <rect width="64" x="416" y="-108" height="24" />
+        <line x2="480" y1="-96" y2="-96" x1="416" />
+        <attrtext style="alignment:RIGHT;fontsize:24;fontname:Arial" attrname="PinName" x="408" y="-32" type="pin bf_Pic_Tocd(5:0)" />
+        <rect width="64" x="416" y="-44" height="24" />
+        <line x2="480" y1="-32" y2="-32" x1="416" />
+    </graph>
+</symbol>

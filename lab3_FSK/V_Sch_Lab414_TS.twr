@@ -1,0 +1,201 @@
+--------------------------------------------------------------------------------
+Release 14.4 Trace  (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.4\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 5
+-n 3 -fastpaths -xml V_Sch_Lab414_TS.twx V_Sch_Lab414_TS.ncd -o
+V_Sch_Lab414_TS.twr V_Sch_Lab414_TS.pcf -ucf Pins_V_Sch_Lab414_TS.ucf
+
+Design file:              V_Sch_Lab414_TS.ncd
+Physical constraint file: V_Sch_Lab414_TS.pcf
+Device,package,speed:     xc3s500e,fg320,-5 (PRODUCTION 1.27 2012-12-04)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock F50MHz
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+BTN0        |    2.266(R)|   -0.696(R)|clk               |   0.000|
+BTN1        |   14.754(R)|   -2.723(R)|clk               |   0.000|
+BTN2        |   12.988(R)|   -2.354(R)|clk               |   0.000|
+BTN3        |    2.312(R)|   -0.735(R)|clk               |   0.000|
+JC8         |    1.627(R)|   -0.180(R)|clk               |   0.000|
+SW<0>       |    1.236(R)|    0.129(R)|clk               |   0.000|
+SW<1>       |    1.200(R)|    0.158(R)|clk               |   0.000|
+SW<2>       |    0.790(R)|    0.495(R)|clk               |   0.000|
+SW<3>       |    0.422(R)|    0.789(R)|clk               |   0.000|
+SW<4>       |    0.246(R)|    0.929(R)|clk               |   0.000|
+SW<5>       |    0.452(R)|    0.765(R)|clk               |   0.000|
+SW<6>       |    0.532(R)|    0.701(R)|clk               |   0.000|
+SW<7>       |    0.874(R)|    0.423(R)|clk               |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock F50MHz to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+AN<0>       |    7.996(R)|clk               |   0.000|
+AN<1>       |    8.711(R)|clk               |   0.000|
+AN<2>       |    8.432(R)|clk               |   0.000|
+AN<3>       |    7.754(R)|clk               |   0.000|
+JA4         |    7.225(R)|clk               |   0.000|
+JA7         |    7.333(R)|clk               |   0.000|
+JA9         |    8.642(R)|clk               |   0.000|
+JA10        |    8.460(R)|clk               |   0.000|
+JB1         |    7.437(R)|clk               |   0.000|
+JB2         |    9.506(R)|clk               |   0.000|
+JB3         |    8.404(R)|clk               |   0.000|
+JB4         |    8.077(R)|clk               |   0.000|
+JC7         |    9.001(R)|clk               |   0.000|
+JC10        |    7.306(R)|clk               |   0.000|
+JD1         |    8.325(R)|clk               |   0.000|
+JD2         |    8.474(R)|clk               |   0.000|
+JD3         |    8.672(R)|clk               |   0.000|
+JD4         |   10.451(R)|clk               |   0.000|
+LED<0>      |   10.308(R)|clk               |   0.000|
+LED<1>      |   10.192(R)|clk               |   0.000|
+LED<2>      |   10.241(R)|clk               |   0.000|
+LED<3>      |   10.549(R)|clk               |   0.000|
+LED<4>      |   11.794(R)|clk               |   0.000|
+LED<5>      |   12.105(R)|clk               |   0.000|
+LED<6>      |   10.666(R)|clk               |   0.000|
+LED<7>      |   10.736(R)|clk               |   0.000|
+seg<0>      |   13.582(R)|clk               |   0.000|
+seg<1>      |   12.932(R)|clk               |   0.000|
+seg<2>      |   13.291(R)|clk               |   0.000|
+seg<3>      |   13.723(R)|clk               |   0.000|
+seg<4>      |   13.251(R)|clk               |   0.000|
+seg<5>      |   13.505(R)|clk               |   0.000|
+seg<6>      |   12.233(R)|clk               |   0.000|
+seg_P       |    8.415(R)|clk               |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock F50MHz
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+F50MHz         |   16.927|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+BTN1           |seg<0>         |   12.637|
+BTN1           |seg<1>         |   12.009|
+BTN1           |seg<2>         |   12.437|
+BTN1           |seg<3>         |   12.869|
+BTN1           |seg<4>         |   12.328|
+BTN1           |seg<5>         |   12.560|
+BTN1           |seg<6>         |   11.794|
+BTN1           |seg_P          |    6.084|
+BTN2           |seg<0>         |   12.687|
+BTN2           |seg<1>         |   12.037|
+BTN2           |seg<2>         |   12.322|
+BTN2           |seg<3>         |   12.760|
+BTN2           |seg<4>         |   12.356|
+BTN2           |seg<5>         |   12.610|
+BTN2           |seg<6>         |   11.815|
+BTN2           |seg_P          |    6.199|
+SW<0>          |seg<0>         |   10.056|
+SW<0>          |seg<1>         |    9.428|
+SW<0>          |seg<2>         |    9.856|
+SW<0>          |seg<3>         |   10.288|
+SW<0>          |seg<4>         |    9.747|
+SW<0>          |seg<5>         |    9.979|
+SW<0>          |seg<6>         |    8.430|
+SW<1>          |seg<0>         |   10.392|
+SW<1>          |seg<1>         |    9.742|
+SW<1>          |seg<2>         |   10.027|
+SW<1>          |seg<3>         |   10.465|
+SW<1>          |seg<4>         |   10.061|
+SW<1>          |seg<5>         |   10.315|
+SW<1>          |seg<6>         |    8.377|
+SW<2>          |seg<0>         |    9.290|
+SW<2>          |seg<1>         |    8.606|
+SW<2>          |seg<2>         |    8.986|
+SW<2>          |seg<3>         |    9.474|
+SW<2>          |seg<4>         |    8.925|
+SW<2>          |seg<5>         |    9.213|
+SW<2>          |seg<6>         |    8.126|
+SW<3>          |seg<0>         |   10.127|
+SW<3>          |seg<1>         |    9.448|
+SW<3>          |seg<2>         |    9.695|
+SW<3>          |seg<3>         |   10.160|
+SW<3>          |seg<4>         |    9.767|
+SW<3>          |seg<5>         |   10.050|
+SW<3>          |seg<6>         |    9.324|
+SW<4>          |seg<0>         |   11.078|
+SW<4>          |seg<1>         |   10.450|
+SW<4>          |seg<2>         |   10.878|
+SW<4>          |seg<3>         |   11.310|
+SW<4>          |seg<4>         |   10.769|
+SW<4>          |seg<5>         |   11.001|
+SW<4>          |seg<6>         |    9.452|
+SW<5>          |seg<0>         |   10.854|
+SW<5>          |seg<1>         |   10.204|
+SW<5>          |seg<2>         |   10.489|
+SW<5>          |seg<3>         |   10.927|
+SW<5>          |seg<4>         |   10.523|
+SW<5>          |seg<5>         |   10.777|
+SW<5>          |seg<6>         |    8.839|
+SW<6>          |seg<0>         |   11.215|
+SW<6>          |seg<1>         |   10.531|
+SW<6>          |seg<2>         |   10.911|
+SW<6>          |seg<3>         |   11.399|
+SW<6>          |seg<4>         |   10.850|
+SW<6>          |seg<5>         |   11.138|
+SW<6>          |seg<6>         |   10.051|
+SW<7>          |seg<0>         |   11.439|
+SW<7>          |seg<1>         |   10.760|
+SW<7>          |seg<2>         |   11.007|
+SW<7>          |seg<3>         |   11.472|
+SW<7>          |seg<4>         |   11.079|
+SW<7>          |seg<5>         |   11.362|
+SW<7>          |seg<6>         |   10.636|
+---------------+---------------+---------+
+
+
+Analysis completed Sun Dec 17 20:19:14 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 183 MB
+
+
+

@@ -1,0 +1,505 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Mes_AMP_SH.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Mes_AMP_SH.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Mes_AMP_SH"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Mes_AMP_SH
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "MEM12x128.v" in library work
+Compiling verilog file "Mes_AMP_SH.v" in library work
+Module <MEM12x128> compiled
+Module <Mes_AMP_SH> compiled
+No errors in compilation
+Analysis of file <"Mes_AMP_SH.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Mes_AMP_SH> in library <work> with parameters.
+	F1 = "00000000000000000000010010110000"
+	Fclk = "00000010111110101111000010000000"
+	ND = "00000000000000000000000001100100"
+
+Analyzing hierarchy for module <MEM12x128> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Mes_AMP_SH>.
+	F1 = 32'sb00000000000000000000010010110000
+	Fclk = 32'sb00000010111110101111000010000000
+	ND = 32'sb00000000000000000000000001100100
+Module <Mes_AMP_SH> is correct for synthesis.
+ 
+Analyzing module <MEM12x128> in library <work>.
+INFO:Xst:2546 - "MEM12x128.v" line 31: reading initialization file "init_MEM12x128.txt".
+Module <MEM12x128> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <MEM12x128>.
+    Related source file is "MEM12x128.v".
+    Found 128x12-bit dual-port RAM <Mram_MEM> for signal <MEM>.
+    Summary:
+	inferred   1 RAM(s).
+Unit <MEM12x128> synthesized.
+
+
+Synthesizing Unit <Mes_AMP_SH>.
+    Related source file is "Mes_AMP_SH.v".
+    Found 13-bit register for signal <bf_AMP>.
+    Found 13-bit updown counter for signal <bf_SH>.
+    Found 7-bit subtractor for signal <Adr_rd>.
+    Found 7-bit up counter for signal <Adr_wr>.
+    Found 13-bit subtractor for signal <AMP$sub0000> created at line 51.
+    Found 13-bit adder for signal <bf_AMP$add0000> created at line 63.
+    Found 13-bit comparator greatequal for signal <bf_AMP$cmp_ge0000> created at line 63.
+    Found 13-bit comparator greater for signal <bf_AMP$cmp_gt0000> created at line 63.
+    Found 13-bit comparator lessequal for signal <bf_AMP$cmp_le0000> created at line 63.
+    Found 13-bit subtractor for signal <bf_AMP$sub0000> created at line 63.
+    Found 13-bit comparator greatequal for signal <bf_SH$cmp_ge0000> created at line 61.
+    Found 13-bit comparator greater for signal <bf_SH$cmp_gt0000> created at line 61.
+    Found 13-bit comparator lessequal for signal <bf_SH$cmp_le0000> created at line 61.
+    Found 11-bit up counter for signal <cb_ce>.
+    Found 13-bit subtractor for signal <dAMP>.
+    Found 13-bit adder for signal <mod_dAMP$addsub0000> created at line 59.
+    Found 12-bit register for signal <PIC_max>.
+    Found 12-bit comparator lessequal for signal <PIC_max$cmp_le0000> created at line 54.
+    Found 12-bit register for signal <PIC_min>.
+    Found 12-bit comparator greatequal for signal <PIC_min$cmp_ge0000> created at line 55.
+    Found 12-bit adder carry out for signal <SH$addsub0000> created at line 50.
+    Summary:
+	inferred   3 Counter(s).
+	inferred  37 D-type flip-flop(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred   8 Comparator(s).
+Unit <Mes_AMP_SH> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x12-bit dual-port RAM                              : 1
+# Adders/Subtractors                                   : 7
+ 12-bit adder carry out                                : 1
+ 13-bit adder                                          : 2
+ 13-bit subtractor                                     : 3
+ 7-bit subtractor                                      : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 13-bit updown counter                                 : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 3
+ 12-bit register                                       : 2
+ 13-bit register                                       : 1
+# Comparators                                          : 8
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator greatequal                          : 2
+ 13-bit comparator greater                             : 2
+ 13-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <bf_AMP_11> has a constant value of 0 in block <Mes_AMP_SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bf_AMP_12> has a constant value of 0 in block <Mes_AMP_SH>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <MEM12x128>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_MEM> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 12-bit                   |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <we>            | high     |
+    |     addrA          | connected to signal <Adr_wr>        |          |
+    |     diA            | connected to signal <DI>            |          |
+    -----------------------------------------------------------------------
+    | Port B                                                              |
+    |     aspect ratio   | 128-word x 12-bit                   |          |
+    |     addrB          | connected to signal <Adr_rd>        |          |
+    |     doB            | connected to signal <DO>            |          |
+    -----------------------------------------------------------------------
+Unit <MEM12x128> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 128x12-bit dual-port distributed RAM                  : 1
+# Adders/Subtractors                                   : 7
+ 12-bit adder carry out                                : 1
+ 13-bit adder                                          : 2
+ 13-bit subtractor                                     : 3
+ 7-bit subtractor                                      : 1
+# Counters                                             : 3
+ 11-bit up counter                                     : 1
+ 13-bit updown counter                                 : 1
+ 7-bit up counter                                      : 1
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+# Comparators                                          : 8
+ 12-bit comparator greatequal                          : 1
+ 12-bit comparator lessequal                           : 1
+ 13-bit comparator greatequal                          : 2
+ 13-bit comparator greater                             : 2
+ 13-bit comparator lessequal                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <bf_AMP_11> has a constant value of 0 in block <Mes_AMP_SH>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <bf_AMP_12> has a constant value of 0 in block <Mes_AMP_SH>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <Mes_AMP_SH> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Mes_AMP_SH, actual ratio is 3.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Mes_AMP_SH.ngr
+Top Level Output File Name         : Mes_AMP_SH
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 79
+
+Cell Usage :
+# BELS                             : 587
+#      GND                         : 1
+#      INV                         : 20
+#      LUT1                        : 11
+#      LUT2                        : 146
+#      LUT3                        : 68
+#      LUT4                        : 40
+#      MUXCY                       : 168
+#      MUXF5                       : 25
+#      MUXF6                       : 12
+#      VCC                         : 1
+#      XORCY                       : 95
+# FlipFlops/Latches                : 66
+#      FDE                         : 55
+#      FDR                         : 10
+#      FDS                         : 1
+# RAMS                             : 96
+#      RAM16X1D                    : 96
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 78
+#      IBUF                        : 13
+#      OBUF                        : 65
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                      150  out of   4656     3%  
+ Number of Slice Flip Flops:             66  out of   9312     0%  
+ Number of 4 input LUTs:                477  out of   9312     5%  
+    Number used as logic:               285
+    Number used as RAMs:                192
+ Number of IOs:                          79
+ Number of bonded IOBs:                  79  out of    232    34%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 162   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 11.176ns (Maximum Frequency: 89.477MHz)
+   Minimum input arrival time before clock: 6.319ns
+   Maximum output required time after clock: 9.417ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 11.176ns (frequency: 89.477MHz)
+  Total number of paths / destination ports: 242374 / 972
+-------------------------------------------------------------------------
+Delay:               11.176ns (Levels of Logic = 22)
+  Source:            PIC_max_0 (FF)
+  Destination:       bf_AMP_10 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: PIC_max_0 to bf_AMP_10
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              3   0.514   0.603  PIC_max_0 (PIC_max_0)
+     LUT2:I0->O            1   0.612   0.000  Msub_AMP_sub0000_lut<0> (Msub_AMP_sub0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Msub_AMP_sub0000_cy<0> (Msub_AMP_sub0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<1> (Msub_AMP_sub0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<2> (Msub_AMP_sub0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<3> (Msub_AMP_sub0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<4> (Msub_AMP_sub0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<5> (Msub_AMP_sub0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<6> (Msub_AMP_sub0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<7> (Msub_AMP_sub0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<8> (Msub_AMP_sub0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Msub_AMP_sub0000_cy<9> (Msub_AMP_sub0000_cy<9>)
+     XORCY:CI->O           4   0.699   0.568  Msub_AMP_sub0000_xor<10> (AMP_9_OBUF)
+     LUT2:I1->O            1   0.612   0.000  Msub_dAMP_lut<9> (Msub_dAMP_lut<9>)
+     MUXCY:S->O            1   0.404   0.000  Msub_dAMP_cy<9> (Msub_dAMP_cy<9>)
+     XORCY:CI->O           3   0.699   0.451  Msub_dAMP_xor<10> (dAMP<10>)
+     INV:I->O              1   0.612   0.000  Madd_mod_dAMP_not0000<10>1_INV_0 (Madd_mod_dAMP_not0000<10>)
+     MUXCY:S->O            1   0.404   0.000  Madd_mod_dAMP_addsub0000_cy<10> (Madd_mod_dAMP_addsub0000_cy<10>)
+     XORCY:CI->O           2   0.699   0.410  Madd_mod_dAMP_addsub0000_xor<11> (mod_dAMP_addsub0000<11>)
+     LUT3:I2->O            1   0.612   0.000  mod_dAMP<11>11 (mod_dAMP<11>1)
+     MUXCY:S->O            0   0.404   0.000  Madd_bf_AMP_add0000_cy<11> (Madd_bf_AMP_add0000_cy<11>)
+     XORCY:CI->O           1   0.699   0.426  Madd_bf_AMP_add0000_xor<12> (bf_AMP_add0000<12>)
+     LUT3:I1->O            1   0.612   0.000  bf_AMP_mux0000<10>1 (bf_AMP_mux0000<10>)
+     FDE:D                     0.268          bf_AMP_10
+    ----------------------------------------
+    Total                     11.176ns (8.717ns logic, 2.459ns route)
+                                       (78.0% logic, 22.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 624 / 168
+-------------------------------------------------------------------------
+Offset:              6.319ns (Levels of Logic = 15)
+  Source:            FSK_SH<0> (PAD)
+  Destination:       PIC_min_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: FSK_SH<0> to PIC_min_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            11   1.106   0.945  FSK_SH_0_IBUF (FSK_SH_0_IBUF)
+     LUT2:I0->O            1   0.612   0.000  Mcompar_PIC_min_cmp_ge0000_lut<0> (Mcompar_PIC_min_cmp_ge0000_lut<0>)
+     MUXCY:S->O            1   0.404   0.000  Mcompar_PIC_min_cmp_ge0000_cy<0> (Mcompar_PIC_min_cmp_ge0000_cy<0>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<1> (Mcompar_PIC_min_cmp_ge0000_cy<1>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<2> (Mcompar_PIC_min_cmp_ge0000_cy<2>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<3> (Mcompar_PIC_min_cmp_ge0000_cy<3>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<4> (Mcompar_PIC_min_cmp_ge0000_cy<4>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<5> (Mcompar_PIC_min_cmp_ge0000_cy<5>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<6> (Mcompar_PIC_min_cmp_ge0000_cy<6>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<7> (Mcompar_PIC_min_cmp_ge0000_cy<7>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<8> (Mcompar_PIC_min_cmp_ge0000_cy<8>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<9> (Mcompar_PIC_min_cmp_ge0000_cy<9>)
+     MUXCY:CI->O           1   0.052   0.000  Mcompar_PIC_min_cmp_ge0000_cy<10> (Mcompar_PIC_min_cmp_ge0000_cy<10>)
+     MUXCY:CI->O           1   0.399   0.426  Mcompar_PIC_min_cmp_ge0000_cy<11> (PIC_min_cmp_ge0000)
+     LUT3:I1->O           12   0.612   0.817  PIC_min_not00011 (PIC_min_not0001)
+     FDE:CE                    0.483          PIC_min_0
+    ----------------------------------------
+    Total                      6.319ns (4.132ns logic, 2.188ns route)
+                                       (65.4% logic, 34.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 1471 / 61
+-------------------------------------------------------------------------
+Offset:              9.417ns (Levels of Logic = 6)
+  Source:            Adr_wr_3 (FF)
+  Destination:       DFSK_SH<11> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Adr_wr_3 to DFSK_SH<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q            295   0.514   1.295  Adr_wr_3 (Adr_wr_3)
+     LUT2:I0->O           96   0.612   1.090  Msub_Adr_rd_xor<3>11 (Adr_rd<3>)
+     RAM16X1D:DPRA3->DPO    1   0.612   0.426  DD2/Mram_MEM1 (N11)
+     LUT3:I1->O            1   0.612   0.000  inst_LPM_MUX_6 (inst_LPM_MUX_6)
+     MUXF5:I0->O           1   0.278   0.000  inst_LPM_MUX_4_f5 (inst_LPM_MUX_4_f5)
+     MUXF6:I0->O           1   0.451   0.357  inst_LPM_MUX_2_f6 (DFSK_SH_0_OBUF)
+     OBUF:I->O                 3.169          DFSK_SH_0_OBUF (DFSK_SH<0>)
+    ----------------------------------------
+    Total                      9.417ns (6.248ns logic, 3.169ns route)
+                                       (66.4% logic, 33.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.77 secs
+ 
+--> 
+
+Total memory usage is 270880 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

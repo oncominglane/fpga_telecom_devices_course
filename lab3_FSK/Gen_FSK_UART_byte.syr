@@ -1,0 +1,579 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: Gen_FSK_UART_byte.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Gen_FSK_UART_byte.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Gen_FSK_UART_byte"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : Gen_FSK_UART_byte
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "Gen_Tce.v" in library work
+Compiling verilog file "Gen_SIN.v" in library work
+Module <Gen_Tce> compiled
+Compiling verilog file "Gen_PW_1bit.v" in library work
+Module <Gen_SIN> compiled
+Compiling verilog file "UTXD1B.v" in library work
+Module <Gen_PW_1bit> compiled
+Compiling verilog file "Gen_FSK_1bit.v" in library work
+Module <UTXD1B> compiled
+Compiling verilog file "Gen_FSK_UART_byte.v" in library work
+Module <Gen_FSK_1bit> compiled
+Module <Gen_FSK_UART_byte> compiled
+No errors in compilation
+Analysis of file <"Gen_FSK_UART_byte.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <Gen_FSK_UART_byte> in library <work>.
+
+Analyzing hierarchy for module <UTXD1B> in library <work> with parameters.
+	Fclk = "00000010111110101111000010000000"
+	Nt = "00000000000000001010001011000010"
+	VEL = "00000000000000000000010010110000"
+
+Analyzing hierarchy for module <Gen_FSK_1bit> in library <work> with parameters.
+	SH = "00000000000000000000100000000000"
+
+Analyzing hierarchy for module <Gen_PW_1bit> in library <work> with parameters.
+	F1 = "00000000000000000000010010110000"
+	Fclk = "00000010111110101111000010000000"
+
+Analyzing hierarchy for module <Gen_Tce> in library <work> with parameters.
+	F0 = "00000000000000000000100010011000"
+	F1 = "00000000000000000000010010110000"
+	Fclk = "00000010111110101111000010000000"
+	NP = "00000000000000000000000001100100"
+
+Analyzing hierarchy for module <Gen_SIN> in library <work> with parameters.
+	NP = "00000000000000000000000001100100"
+	Xmax = "00000000000000000000000000011001"
+	Xmin = "00000000000000000000000000000000"
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Gen_FSK_UART_byte>.
+Module <Gen_FSK_UART_byte> is correct for synthesis.
+ 
+Analyzing module <UTXD1B> in library <work>.
+	Fclk = 32'sb00000010111110101111000010000000
+	Nt = 32'sb00000000000000001010001011000010
+	VEL = 32'sb00000000000000000000010010110000
+Module <UTXD1B> is correct for synthesis.
+ 
+Analyzing module <Gen_FSK_1bit> in library <work>.
+	SH = 32'sb00000000000000000000100000000000
+Module <Gen_FSK_1bit> is correct for synthesis.
+ 
+Analyzing module <Gen_PW_1bit> in library <work>.
+	F1 = 32'sb00000000000000000000010010110000
+	Fclk = 32'sb00000010111110101111000010000000
+Module <Gen_PW_1bit> is correct for synthesis.
+ 
+Analyzing module <Gen_Tce> in library <work>.
+	F0 = 32'sb00000000000000000000100010011000
+	F1 = 32'sb00000000000000000000010010110000
+	Fclk = 32'sb00000010111110101111000010000000
+	NP = 32'sb00000000000000000000000001100100
+Module <Gen_Tce> is correct for synthesis.
+ 
+Analyzing module <Gen_SIN> in library <work>.
+	NP = 32'sb00000000000000000000000001100100
+	Xmax = 32'sb00000000000000000000000000011001
+	Xmin = 32'sb00000000000000000000000000000000
+Module <Gen_SIN> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <UTXD1B>.
+    Related source file is "UTXD1B.v".
+    Found 1-bit register for signal <en_tx_byte>.
+    Found 8-bit register for signal <sr_dat>.
+    Found 4-bit up counter for signal <cb_bit>.
+    Found 16-bit up counter for signal <cb_tact>.
+    Found 4-bit comparator greater for signal <T_dat$cmp_gt0000> created at line 38.
+    Found 4-bit comparator less for signal <T_dat$cmp_lt0000> created at line 38.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   9 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+Unit <UTXD1B> synthesized.
+
+
+Synthesizing Unit <Gen_PW_1bit>.
+    Related source file is "Gen_PW_1bit.v".
+    Found 1-bit register for signal <PW>.
+    Found 16-bit up counter for signal <cb_PW>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <Gen_PW_1bit> synthesized.
+
+
+Synthesizing Unit <Gen_Tce>.
+    Related source file is "Gen_Tce.v".
+    Found 1-bit register for signal <CO>.
+    Found 9-bit up counter for signal <cb_ce>.
+    Found 9-bit comparator equal for signal <ce>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+Unit <Gen_Tce> synthesized.
+
+
+Synthesizing Unit <Gen_SIN>.
+    Related source file is "Gen_SIN.v".
+WARNING:Xst:646 - Signal <MY<6:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 32x11-bit ROM for signal <Y$mux0000>.
+    Found 1-bit register for signal <S>.
+    Found 8-bit updown counter for signal <X>.
+    Found 11x8-bit multiplier for signal <MY$mult0000> created at line 33.
+    Found 12-bit adder for signal <SIN$addsub0000> created at line 69.
+    Found 1-bit register for signal <up>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Multiplier(s).
+Unit <Gen_SIN> synthesized.
+
+
+Synthesizing Unit <Gen_FSK_1bit>.
+    Related source file is "Gen_FSK_1bit.v".
+    Found 12-bit adder for signal <FSK_SH$addsub0000> created at line 29.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Gen_FSK_1bit> synthesized.
+
+
+Synthesizing Unit <Gen_FSK_UART_byte>.
+    Related source file is "Gen_FSK_UART_byte.v".
+Unit <Gen_FSK_UART_byte> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x11-bit ROM                                         : 1
+# Multipliers                                          : 1
+ 11x8-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 2
+# Counters                                             : 5
+ 16-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 6
+ 1-bit register                                        : 5
+ 8-bit register                                        : 1
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 9-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 32x11-bit ROM                                         : 1
+# Multipliers                                          : 1
+ 11x8-bit multiplier                                   : 1
+# Adders/Subtractors                                   : 2
+ 12-bit adder                                          : 2
+# Counters                                             : 5
+ 16-bit up counter                                     : 2
+ 4-bit up counter                                      : 1
+ 8-bit updown counter                                  : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 13
+ Flip-Flops                                            : 13
+# Comparators                                          : 3
+ 4-bit comparator greater                              : 1
+ 4-bit comparator less                                 : 1
+ 9-bit comparator equal                                : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Gen_FSK_UART_byte> ...
+
+Optimizing unit <UTXD1B> ...
+
+Optimizing unit <Gen_SIN> ...
+
+Optimizing unit <Gen_FSK_1bit> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Gen_FSK_UART_byte, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 66
+ Flip-Flops                                            : 66
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Gen_FSK_UART_byte.ngr
+Top Level Output File Name         : Gen_FSK_UART_byte
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 38
+
+Cell Usage :
+# BELS                             : 290
+#      GND                         : 1
+#      INV                         : 16
+#      LUT1                        : 39
+#      LUT2                        : 13
+#      LUT2_L                      : 2
+#      LUT3                        : 6
+#      LUT3_D                      : 1
+#      LUT4                        : 82
+#      LUT4_D                      : 1
+#      LUT4_L                      : 5
+#      MUXCY                       : 56
+#      MUXF5                       : 6
+#      VCC                         : 1
+#      XORCY                       : 61
+# FlipFlops/Latches                : 66
+#      FD                          : 1
+#      FDE                         : 18
+#      FDR                         : 23
+#      FDRE                        : 19
+#      FDS                         : 2
+#      FDSE                        : 3
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 37
+#      IBUF                        : 17
+#      OBUF                        : 20
+# MULTs                            : 1
+#      MULT18X18SIO                : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       88  out of   4656     1%  
+ Number of Slice Flip Flops:             66  out of   9312     0%  
+ Number of 4 input LUTs:                165  out of   9312     1%  
+ Number of IOs:                          38
+ Number of bonded IOBs:                  38  out of    232    16%  
+ Number of MULT18X18SIOs:                 1  out of     20     5%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 66    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 5.899ns (Maximum Frequency: 169.516MHz)
+   Minimum input arrival time before clock: 4.057ns
+   Maximum output required time after clock: 15.888ns
+   Maximum combinational path delay: 12.650ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.899ns (frequency: 169.516MHz)
+  Total number of paths / destination ports: 1758 / 150
+-------------------------------------------------------------------------
+Delay:               5.899ns (Levels of Logic = 3)
+  Source:            DD1/cb_tact_7 (FF)
+  Destination:       DD2/DD1/cb_PW_15 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: DD1/cb_tact_7 to DD2/DD1/cb_PW_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.514   0.532  DD1/cb_tact_7 (DD1/cb_tact_7)
+     LUT4:I0->O            1   0.612   0.509  DD1/ce_tact8 (DD1/ce_tact8)
+     LUT4_D:I0->O         12   0.612   0.820  DD1/ce_tact67 (ce_tact)
+     LUT4:I3->O           17   0.612   0.893  st_bit (st_bit)
+     FDSE:S                    0.795          DD2/DD1/PW
+    ----------------------------------------
+    Total                      5.899ns (3.145ns logic, 2.754ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 46 / 46
+-------------------------------------------------------------------------
+Offset:              4.057ns (Levels of Logic = 2)
+  Source:            st (PAD)
+  Destination:       DD2/DD1/cb_PW_15 (FF)
+  Destination Clock: clk rising
+
+  Data Path: st to DD2/DD1/cb_PW_15
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.106   0.651  st_IBUF (st_IBUF)
+     LUT4:I0->O           17   0.612   0.893  st_bit (st_bit)
+     FDSE:S                    0.795          DD2/DD1/PW
+    ----------------------------------------
+    Total                      4.057ns (2.513ns logic, 1.544ns route)
+                                       (61.9% logic, 38.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12885 / 20
+-------------------------------------------------------------------------
+Offset:              15.888ns (Levels of Logic = 19)
+  Source:            DD2/DD3/X_2 (FF)
+  Destination:       FSK_SH<11> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: DD2/DD3/X_2 to FSK_SH<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             29   0.514   1.224  DD2/DD3/X_2 (DD2/DD3/X_2)
+     LUT2:I0->O            2   0.612   0.410  DD2/DD3/Y<0>68 (DD2/DD3/Y<0>68)
+     LUT4:I2->O            1   0.612   0.360  DD2/DD3/Y<0>77 (DD2/DD3/Y<0>77)
+     LUT4:I3->O            1   0.612   0.357  DD2/DD3/Y<0>96 (DD2/DD3/Y<0>)
+     MULT18X18SIO:A0->P7    2   3.861   0.532  DD2/DD3/Mmult_MY_mult0000 (DD2/DD3/AY<0>)
+     LUT1:I0->O            1   0.612   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<0>_rt (DD2/DD3/Madd_SIN_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<0> (DD2/DD3/Madd_SIN_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<1> (DD2/DD3/Madd_SIN_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<2> (DD2/DD3/Madd_SIN_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<3> (DD2/DD3/Madd_SIN_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<4> (DD2/DD3/Madd_SIN_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<5> (DD2/DD3/Madd_SIN_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<6> (DD2/DD3/Madd_SIN_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<7> (DD2/DD3/Madd_SIN_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<8> (DD2/DD3/Madd_SIN_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<9> (DD2/DD3/Madd_SIN_addsub0000_cy<9>)
+     MUXCY:CI->O           0   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<10> (DD2/DD3/Madd_SIN_addsub0000_cy<10>)
+     XORCY:CI->O           1   0.699   0.426  DD2/DD3/Madd_SIN_addsub0000_xor<11> (DD2/DD3/SIN_addsub0000<11>)
+     LUT3:I1->O            1   0.612   0.357  DD2/FSK_SH<11>1 (FSK_SH_11_OBUF)
+     OBUF:I->O                 3.169          FSK_SH_11_OBUF (FSK_SH<11>)
+    ----------------------------------------
+    Total                     15.888ns (12.222ns logic, 3.666ns route)
+                                       (76.9% logic, 23.1% route)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 704 / 12
+-------------------------------------------------------------------------
+Delay:               12.650ns (Levels of Logic = 17)
+  Source:            M<3> (PAD)
+  Destination:       FSK_SH<11> (PAD)
+
+  Data Path: M<3> to FSK_SH<11>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   1.106   0.357  M_3_IBUF (M_3_IBUF)
+     MULT18X18SIO:B3->P7    2   3.861   0.532  DD2/DD3/Mmult_MY_mult0000 (DD2/DD3/AY<0>)
+     LUT1:I0->O            1   0.612   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<0>_rt (DD2/DD3/Madd_SIN_addsub0000_cy<0>_rt)
+     MUXCY:S->O            1   0.404   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<0> (DD2/DD3/Madd_SIN_addsub0000_cy<0>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<1> (DD2/DD3/Madd_SIN_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<2> (DD2/DD3/Madd_SIN_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<3> (DD2/DD3/Madd_SIN_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<4> (DD2/DD3/Madd_SIN_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<5> (DD2/DD3/Madd_SIN_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<6> (DD2/DD3/Madd_SIN_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<7> (DD2/DD3/Madd_SIN_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<8> (DD2/DD3/Madd_SIN_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<9> (DD2/DD3/Madd_SIN_addsub0000_cy<9>)
+     MUXCY:CI->O           0   0.051   0.000  DD2/DD3/Madd_SIN_addsub0000_cy<10> (DD2/DD3/Madd_SIN_addsub0000_cy<10>)
+     XORCY:CI->O           1   0.699   0.426  DD2/DD3/Madd_SIN_addsub0000_xor<11> (DD2/DD3/SIN_addsub0000<11>)
+     LUT3:I1->O            1   0.612   0.357  DD2/FSK_SH<11>1 (FSK_SH_11_OBUF)
+     OBUF:I->O                 3.169          FSK_SH_11_OBUF (FSK_SH<11>)
+    ----------------------------------------
+    Total                     12.650ns (10.978ns logic, 1.672ns route)
+                                       (86.8% logic, 13.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.85 secs
+ 
+--> 
+
+Total memory usage is 271840 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

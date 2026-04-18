@@ -1,0 +1,3 @@
+verilog work "MEM12x128.v"
+verilog work "Mes_AMP_SH.v"
+verilog work "DET_FSK_bit_Tocd.v"

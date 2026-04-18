@@ -1,0 +1,13 @@
+[Inputs]
+clk
+SDAT
+st
+BUSY
+[Outputs]
+st_ADC
+SCLK
+=ADC_5000[11:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel ADC_95
+

@@ -1,0 +1,17 @@
+PROMGEN: Xilinx Prom Generator P.49d
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+promgen -w -p mcs -c FF -o D:\Proj2018\MIPT\Labs\FPGA_Lab_TKU\Lab414_T95//17jan_V -x xcf04s -u 00000000 D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_T95/v_sch_lab414_t95.bit 
+
+PROM D:\Proj2018\MIPT\Labs\FPGA_Lab_TKU\Lab414_T95\17jan_V.prm map: Wed Jan 17 17:52:27 2018
+
+Calculating PROM checksum with fill value ff
+
+Format        Mcs86 (32-bit)
+Size          512K
+PROM start    0000:0000
+PROM end      0007:ffff
+PROM checksum 03bb06d7
+
+        Addr1        Addr2                     Date File(s)
+    0000:0000    0004:547f     Jan 17 17:51:15 2018 D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_T95/v_sch_lab414_t95.bit

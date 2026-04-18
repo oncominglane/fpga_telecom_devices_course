@@ -1,0 +1,9 @@
+Storage Target: Xilinx Flash/PROM
+Storage Family: Platform Flash
+xcf04s          [4 M]
+FF
+17jan_S
+D:\Proj2018\MIPT\Labs\FPGA_Lab_TKU\Lab414_T95\
+
+MCS
+No

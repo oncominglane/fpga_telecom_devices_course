@@ -1,0 +1,374 @@
+Release 14.4 - xst P.49d (nt64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: SPI_AD7895.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "SPI_AD7895.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "SPI_AD7895"
+Output Format                      : NGC
+Target Device                      : xc3s500e-5-fg320
+
+---- Source Options
+Top Module Name                    : SPI_AD7895
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SPI_AD7895.v" in library work
+Module <SPI_AD7895> compiled
+No errors in compilation
+Analysis of file <"SPI_AD7895.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <SPI_AD7895> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SPI_AD7895>.
+Module <SPI_AD7895> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <SPI_AD7895>.
+    Related source file is "SPI_AD7895.v".
+    Found 12-bit register for signal <ADC_dat>.
+    Found 5-bit up counter for signal <cb_bit>.
+    Found 1-bit register for signal <ok_adc>.
+    Found 12-bit register for signal <sr_DAT>.
+    Found 1-bit register for signal <st_ADC>.
+    Found 2-bit up counter for signal <cb_ce>.
+    Found 1-bit register for signal <en_SCLK>.
+    Found 1-bit register for signal <Q>.
+    Found 1-bit register for signal <tBUSY>.
+    Found 1-bit register for signal <ttBUSY>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred  30 D-type flip-flop(s).
+Unit <SPI_AD7895> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 8
+ 1-bit register                                        : 6
+ 12-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 2
+ 2-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SPI_AD7895> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SPI_AD7895, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 37
+ Flip-Flops                                            : 37
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : SPI_AD7895.ngr
+Top Level Output File Name         : SPI_AD7895
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 37
+
+Cell Usage :
+# BELS                             : 20
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 4
+#      LUT3                        : 4
+#      LUT3_L                      : 2
+#      LUT4                        : 5
+#      VCC                         : 1
+# FlipFlops/Latches                : 37
+#      FDE                         : 14
+#      FDR                         : 2
+#      FDRE                        : 19
+#      FDSE                        : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 36
+#      IBUF                        : 3
+#      OBUF                        : 33
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-5 
+
+ Number of Slices:                       24  out of   4656     0%  
+ Number of Slice Flip Flops:             37  out of   9312     0%  
+ Number of 4 input LUTs:                 18  out of   9312     0%  
+ Number of IOs:                          37
+ Number of bonded IOBs:                  37  out of    232    15%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 37    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 3.911ns (Maximum Frequency: 255.715MHz)
+   Minimum input arrival time before clock: 2.860ns
+   Maximum output required time after clock: 5.447ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.911ns (frequency: 255.715MHz)
+  Total number of paths / destination ports: 153 / 69
+-------------------------------------------------------------------------
+Delay:               3.911ns (Levels of Logic = 2)
+  Source:            Q (FF)
+  Destination:       ok_adc (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Q to ok_adc
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             6   0.514   0.638  Q (Q)
+     LUT3:I1->O            1   0.612   0.360  stop_SCLK_SW1 (N4)
+     LUT4:I3->O            2   0.612   0.380  stop_SCLK (stop_SCLK)
+     FDSE:S                    0.795          ok_adc
+    ----------------------------------------
+    Total                      3.911ns (2.533ns logic, 1.378ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 23 / 23
+-------------------------------------------------------------------------
+Offset:              2.860ns (Levels of Logic = 1)
+  Source:            st (PAD)
+  Destination:       st_ADC (FF)
+  Destination Clock: clk rising
+
+  Data Path: st to st_ADC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            21   1.106   0.959  st_IBUF (st_IBUF)
+     FDRE:R                    0.795          st_ADC
+    ----------------------------------------
+    Total                      2.860ns (1.901ns logic, 0.959ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 36 / 33
+-------------------------------------------------------------------------
+Offset:              5.447ns (Levels of Logic = 2)
+  Source:            cb_ce_0 (FF)
+  Destination:       ce_tact (PAD)
+  Source Clock:      clk rising
+
+  Data Path: cb_ce_0 to ce_tact
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.514   0.795  cb_ce_0 (cb_ce_0)
+     LUT3:I0->O            1   0.612   0.357  ce_tact1 (ce_tact_OBUF)
+     OBUF:I->O                 3.169          ce_tact_OBUF (ce_tact)
+    ----------------------------------------
+    Total                      5.447ns (4.295ns logic, 1.152ns route)
+                                       (78.8% logic, 21.2% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.96 secs
+ 
+--> 
+
+Total memory usage is 252640 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,95 @@
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS95.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc V_Sch_Lab414_TS95.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS95.ngc V_Sch_Lab414_TS95.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ngd V_Sch_Lab414_TS95.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS95_map.ncd V_Sch_Lab414_TS95.ncd V_Sch_Lab414_TS95.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS95.twx V_Sch_Lab414_TS95.ncd -o V_Sch_Lab414_TS95.twr V_Sch_Lab414_TS95.pcf -ucf V_Sch_Lab414_TS95.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS95.ut V_Sch_Lab414_TS95.ncd 

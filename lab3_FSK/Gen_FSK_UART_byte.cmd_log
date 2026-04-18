@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/Gen_FSK_UART_byte.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/Gen_FSK_UART_byte.syr" 

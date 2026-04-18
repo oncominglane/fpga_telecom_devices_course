@@ -1,0 +1,15 @@
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pins_V_Sch_Lab414_NS.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS.ngc V_Sch_Lab414_TS.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS_map.ncd V_Sch_Lab414_TS.ngd V_Sch_Lab414_TS.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS_map.ncd V_Sch_Lab414_TS.ncd V_Sch_Lab414_TS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS.twx V_Sch_Lab414_TS.ncd -o V_Sch_Lab414_TS.twr V_Sch_Lab414_TS.pcf -ucf Pins_V_Sch_Lab414_NS.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS.ut V_Sch_Lab414_TS.ncd 
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pins_V_Sch_Lab414_TS.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS.ngc V_Sch_Lab414_TS.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o V_Sch_Lab414_TS_map.ncd V_Sch_Lab414_TS.ngd V_Sch_Lab414_TS.pcf 
+par -w -intstyle ise -ol high -t 1 V_Sch_Lab414_TS_map.ncd V_Sch_Lab414_TS.ncd V_Sch_Lab414_TS.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml V_Sch_Lab414_TS.twx V_Sch_Lab414_TS.ncd -o V_Sch_Lab414_TS.twr V_Sch_Lab414_TS.pcf -ucf Pins_V_Sch_Lab414_TS.ucf 
+bitgen -intstyle ise -f V_Sch_Lab414_TS.ut V_Sch_Lab414_TS.ncd 
+xst -intstyle ise -ifn "D:/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.xst" -ofn "D:/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/V_Sch_Lab414_TS.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/V_Sch_Lab414_TS.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Pins_V_Sch_Lab414_TS.ucf -p xc3s500e-fg320-5 V_Sch_Lab414_TS.ngc V_Sch_Lab414_TS.ngd  

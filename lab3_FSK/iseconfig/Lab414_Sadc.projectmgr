@@ -1,0 +1,222 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--This is an ISE project configuration file.-->
+<!--It holds project specific layout data for the projectmgr plugin.-->
+<!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
+<Project version="2" owner="projectmgr" name="Lab414_Sadc" >
+   <!--This is an ISE project configuration file.-->
+   <ItemView engineview="SynthesisOnly" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/Gen_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Gen_FSK_UART_1byte.v/DD2 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/HART_TX_Byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|HART_TX_Byte.v</ClosedNode>
+         <ClosedNode>/S2_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S2_Sch_Lab414_Sadc.sch</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_14 - ADC</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_16 - Gen_FSK_Byte</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_14 - ADC</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD/DD1 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_14 - ADC</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD/DD1 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_16 - Gen_FSK_Byte</ClosedNode>
+         <ClosedNode>/Test_DET_FSK_bit D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_DET_FSK_bit.v</ClosedNode>
+         <ClosedNode>/Test_DET_FSK_bit D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_DET_FSK_bit.v/DD1 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/Test_DET_FSK_bit D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_DET_FSK_bit.v/DD2 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/Test_DET_FSK_bit F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_DET_FSK_bit.v</ClosedNode>
+         <ClosedNode>/Test_DET_FSK_bit F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_DET_FSK_bit.v/DD2 - DET_FSK_bit</ClosedNode>
+         <ClosedNode>/Test_Gen_ce D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/Test_Gen_ce D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/Test_Gen_ce F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/Test_HART_RXA D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_HART_RXA.v</ClosedNode>
+         <ClosedNode>/Test_HART_RXA D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_HART_RXA.v/DD1 - HART_TXA</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v/DD1 - Gen_FSK_UART_1byte/DD2 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v/DD2 - RX_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>DD9 - DISPLAY (D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_Sadc/DISPLAY.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000171000000020000000000000000000000000200000064ffffffff000000810000000300000002000001710000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>DD9 - DISPLAY (D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_Sadc/DISPLAY.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Design Utilities</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem></SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView guiview="File" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000392000000040101000100000000000000000000000064ffffffff0000008100000000000000040000008900000001000000000000004a0000000100000000000000660000000100000000000002590000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>Gen_ce.v</CurrentItem>
+   </ItemView>
+   <ItemView guiview="Library" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>work</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems/>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000109000000010001000100000000000000000000000064ffffffff000000810000000000000001000001090000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>work</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" guiview="Source" compilemode="AutoCompile" >
+      <ClosedNodes>
+         <ClosedNodesVersion>2</ClosedNodesVersion>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_14 - ADC</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_14 - ADC</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD</ClosedNode>
+         <ClosedNode>/S_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|S_Sch_Lab414_Sadc.sch/XLXI_15 - FSK_RXD/DD1 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/Test_HART_RXA D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_HART_RXA.v</ClosedNode>
+         <ClosedNode>/Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|Test_RX_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD1 - Gen_FSK_UART_1byte/DD2 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit</ClosedNode>
+         <ClosedNode>/V_Sch_Lab414_Sadc D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|V_Sch_Lab414_Sadc.v/DD3 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/tf2_Test_HART_RXA D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf2_Test_HART_RXA.v</ClosedNode>
+         <ClosedNode>/tf_Gen_FSK_UART_1byte D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Gen_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/tf_Gen_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Gen_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/tf_Gen_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Gen_FSK_UART_1byte.v/uut - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/tf_HART_TXA_Byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_HART_TXA_Byte.v</ClosedNode>
+         <ClosedNode>/tf_Test_DET_FSK_bit D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_DET_FSK_bit.v</ClosedNode>
+         <ClosedNode>/tf_Test_FSK_1bit D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_FSK_1bit.v</ClosedNode>
+         <ClosedNode>/tf_Test_FSK_1bit D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_FSK_1bit.v/uut - Test_DET_FSK_bit/DD1 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/tf_Test_FSK_1bit D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_FSK_1bit.v/uut - Test_DET_FSK_bit/DD2 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/tf_Test_Gen_ce D:|PROJECTS|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/tf_Test_Gen_ce D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/tf_Test_Gen_ce D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_Gen_ce.v/uut - Test_Gen_ce</ClosedNode>
+         <ClosedNode>/tf_Test_Gen_ce F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_Gen_ce.v</ClosedNode>
+         <ClosedNode>/tf_Test_HART_RXA D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_HART_RXA.v</ClosedNode>
+         <ClosedNode>/tf_Test_RS_FSK_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RS_FSK_1byte.v/uut - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_1byte.v</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_1byte.v/uut - Test_RX_FSK_UART_1byte/DD1 - Gen_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_1byte.v/uut - Test_RX_FSK_UART_1byte/DD2 - RX_FSK_UART_1byte</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_UART_1byte.v</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_UART_1byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_UART_1byte.v/uut - Test_RX_FSK_UART_1byte/DD2 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit/DD1 - Mes_AMP_SH</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_UART_Byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_UART_Byte.v/uut - Test_RX_FSK_UART_1byte/DD1 - Gen_FSK_UART_1byte/DD2 - Gen_FSK_1bit</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_UART_Byte D:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_UART_Byte.v/uut - Test_RX_FSK_UART_1byte/DD2 - RX_FSK_UART_1byte/DD1 - DET_FSK_bit</ClosedNode>
+         <ClosedNode>/tf_Test_RX_FSK_UART_Byte F:|Proj2017|MIPT|LABs|FPGA_LAB_TKU_2018|Lab414_Sadc|tf_Test_RX_FSK_UART_Byte.v</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>tf_Test_RX_FSK_UART_Byte (D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_Sadc/tf_Test_RX_FSK_UART_Byte.v)</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >3</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000100000000000000000000000000000000020200000001000000010000006400000191000000020000000000000000000000000200000064ffffffff000000810000000300000002000001910000000100000003000000000000000100000003</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
+      <CurrentItem>tf_Test_RX_FSK_UART_Byte (D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_Sadc/tf_Test_RX_FSK_UART_Byte.v)</CurrentItem>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="BehavioralSim" sourcetype="DESUT_VERILOG" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>ISim Simulator</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>ISim Simulator</CurrentItem>
+   </ItemView>
+   <SourceProcessView>000000ff0000000000000002000001d40000010c01000000050100000002</SourceProcessView>
+   <CurrentView>Implementation</CurrentView>
+   <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Design Utilities</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000017a000000010000000100000000000000000000000064ffffffff0000008100000000000000010000017a0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000000000000000000013c000000010000000100000000000000000000000064ffffffff0000008100000000000000010000013c0000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_SCHEMATIC" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+         <ClosedNode>Configure Target Device</ClosedNode>
+         <ClosedNode>Implement Design</ClosedNode>
+         <ClosedNode>Synthesize - XST</ClosedNode>
+         <ClosedNode>User Constraints</ClosedNode>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem/>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001a7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001a70000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem/>
+   </ItemView>
+   <CopyAdditionalFiles/>
+</Project>

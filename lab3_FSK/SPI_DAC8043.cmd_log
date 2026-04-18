@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/SPI_DAC8043.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/SPI_DAC8043.syr" 
+vhdtdtfi -lib work D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/SPI_DAC8043.v -lang verilog -prj Lab414_TS95 -o SPI_DAC8043.spl -module SPI_DAC8043 -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e SPI_DAC8043.spl D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/SPI_DAC8043.sym 

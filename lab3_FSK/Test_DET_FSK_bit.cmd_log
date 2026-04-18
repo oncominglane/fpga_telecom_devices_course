@@ -1,0 +1,4 @@
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.syr" 
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.syr" 
+xst -intstyle ise -ifn "D:/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.xst" -ofn "D:/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/Test_DET_FSK_bit.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/Test_DET_FSK_bit.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/Test_DET_FSK_bit.syr" 

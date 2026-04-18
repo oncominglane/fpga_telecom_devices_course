@@ -1,0 +1,16 @@
+[Inputs]
+clk
+=FSK_IN[11:0]=
+[Outputs]
+URXD
+OCD
+st_SADC
+en_rx_byte
+FSK_res
+=rx_dat[7:0]=
+=AMPdec[15:0]=
+=SHdec[15:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel FSK_RXD
+

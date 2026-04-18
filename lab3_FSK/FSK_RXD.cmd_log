@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.syr" 
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.syr" 
+xst -intstyle ise -ifn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.xst" -ofn "D:/PROJECTS/Proj2017/MIPT/LABs/FPGA_LAB_TKU_2018/Lab414_TS/FSK_RXD.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.syr" 
+xst -intstyle ise -ifn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.xst" -ofn "D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.syr" 
+vhdtdtfi -lib work D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.v -lang verilog -prj Lab414_TS95 -o FSK_RXD.spl -module FSK_RXD -template C:/Xilinx/14.4/ISE_DS/ISE//data/splveri.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e FSK_RXD.spl D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/FSK_RXD.sym 

@@ -1,0 +1,3 @@
+verilog work "Gen_Fce.v"
+verilog work "Gen_ce.v"
+verilog work "Test_Gen_ce.v"

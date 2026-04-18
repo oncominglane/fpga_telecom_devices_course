@@ -1,0 +1,77 @@
+NET "F50MHz" LOC = "B8" ; #clk
+ 
+NET "AN<0>" LOC = "F17" ; 
+NET "AN<1>" LOC = "H17" ; 
+NET "AN<2>" LOC = "C18" ; 
+NET "AN<3>" LOC = "F15" ; 
+
+NET "BTN0" LOC = "B18" ; # DOWN(/2) 
+NET "BTN1" LOC = "D18" ; # FSK_OUT/FSK_IN
+NET "BTN2" LOC = "E18" ; # AMP/{SW,rx_dat}
+NET "BTN3" LOC = "H13" ; # UP (*2)
+
+NET "seg<0>" LOC = "L18" ; 
+NET "seg<1>" LOC = "F18" ; 
+NET "seg<2>" LOC = "D17" ; 
+NET "seg<3>" LOC = "D16" ; 
+NET "seg<4>" LOC = "G14" ; 
+NET "seg<5>" LOC = "J17" ; 
+NET "seg<6>" LOC = "H14" ; 
+NET "seg_P"  LOC = "C17" ; #DOT
+
+NET "SW<0>" LOC = "G18" ; #dat[0]  
+NET "SW<1>" LOC = "H18" ; #dat[1]
+NET "SW<2>" LOC = "K18" ; #dat[2]
+NET "SW<3>" LOC = "K17" ; #dat[3]
+NET "SW<4>" LOC = "L14" ; #dat[4]
+NET "SW<5>" LOC = "L13" ; #dat[5]
+NET "SW<6>" LOC = "N17" ; #dat[6]
+NET "SW<7>" LOC = "R17" ; #dat[7]
+ 
+NET "LED<0>" LOC = "J14" ; #
+NET "LED<1>" LOC = "J15" ; # 
+NET "LED<2>" LOC = "K15" ; # 
+NET "LED<3>" LOC = "K14" ; # 
+NET "LED<4>" LOC = "E17" ; # 
+NET "LED<5>" LOC = "P15" ; # 
+NET "LED<6>" LOC = "F4"  ; # 
+NET "LED<7>" LOC = "R4"  ; # 
+ 
+#NET "TXD" LOC = "P9" ; 
+#NET "RXD" LOC = "U6" ;
+
+#NET "JA1" LOC = "L15" ; #
+#NET "JA2" LOC = "K12" ; # 
+#NET "JA3" LOC = "L17" ; # 
+#NET "JA4" LOC = "M15" ; #
+#NET "JA7" LOC = "K13" ; # 
+NET "JA8" LOC = "L16" ; #SCLK DAC8043
+NET "JA9" LOC = "M14" ; #SDAT DAC8043	
+NET "JA10" LOC = "M16"; #NLD DAC8043 
+
+NET "JB1" LOC = "M13" ; #en_tx	
+NET "JB2" LOC = "R18" ; #UTXD	 
+NET "JB3" LOC = "R15" ; #S		
+#NET "JB4" LOC = "T17" ; #st_DAC_	
+#NET "JB7" LOC = "P17" ; #  
+#NET "JB8" LOC = "R16" ; # 
+#NET "JB9" LOC = "T18" ; #
+#NET "JB10" LOC = "U18"; # 
+
+#NET "JC1" LOC = "G15" ; # 
+#NET "JC2" LOC = "J16" ; # 
+#NET "JC3" LOC = "G13" ; #  
+#NET "JC4" LOC = "H16" ; # 
+NET "JC7" LOC = "H15" ; #SCLK AD7895
+NET "JC8" LOC = "F14" | PULLDOWN ; #SDAT AD7895 
+NET "JC9" LOC = "G16" ; #BUSY AD7895 
+NET "JC10" LOC = "J12" ; #CONVST AD7895
+ 
+NET "JD1" LOC = "J13" ;# en_rx_byte 
+NET "JD2" LOC = "M18" ;# URXD
+NET "JD3" LOC = "N18" ;# OCD	 
+NET "JD4" LOC = "P18" ;# FSK_res
+#NET "JD7" LOC = "K14" ;# 
+#NET "JD8" LOC = "K15" ;# 
+#NET "JD9" LOC = "J15" ;# 
+#NET "JD10" LOC = "J14" ;#

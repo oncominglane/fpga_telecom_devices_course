@@ -1,0 +1,160 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.4
+//  \   \         Application : sch2hdl
+//  /   /         Filename : S_Sch_Lab414_TS.vf
+// /___/   /\     Timestamp : 01/16/2018 10:13:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/S_Sch_Lab414_TS.vf -w D:/Proj2018/MIPT/Labs/FPGA_Lab_TKU/Lab414_TS95/S_Sch_Lab414_TS.sch
+//Design Name: S_Sch_Lab414_TS
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module S_Sch_Lab414_TS(BTN0, 
+                       BTN1, 
+                       BTN2, 
+                       BTN3, 
+                       F50MHz, 
+                       JC8, 
+                       JC9, 
+                       SW, 
+                       AN, 
+                       JA8, 
+                       JA9, 
+                       JA10, 
+                       JB1, 
+                       JB2, 
+                       JB3, 
+                       JC7, 
+                       JC10, 
+                       JD1, 
+                       JD2, 
+                       JD3, 
+                       JD4, 
+                       LED, 
+                       seg, 
+                       seg_P);
+
+    input BTN0;
+    input BTN1;
+    input BTN2;
+    input BTN3;
+    input F50MHz;
+    input JC8;
+    input JC9;
+    input [7:0] SW;
+   output [3:0] AN;
+   output JA8;
+   output JA9;
+   output JA10;
+   output JB1;
+   output JB2;
+   output JB3;
+   output JC7;
+   output JC10;
+   output JD1;
+   output JD2;
+   output JD3;
+   output JD4;
+   output [7:0] LED;
+   output [6:0] seg;
+   output seg_P;
+   
+   wire [15:0] AMP;
+   wire ce10ms;
+   wire ce100ms;
+   wire clk;
+   wire [15:0] Disp_dat;
+   wire [11:0] FSK_IN;
+   wire [11:0] FSK_SH;
+   wire [7:0] M;
+   wire [11:0] MFSK;
+   wire [7:0] rx_dat;
+   wire [15:0] SH;
+   wire st_SADC;
+   wire st_SDAC;
+   wire XLXN_8;
+   wire JD1_DUMMY;
+   
+   assign JD1 = JD1_DUMMY;
+   DISPLAY  XLXI_2 (.BTN1(BTN1), 
+                   .BTN2(BTN2), 
+                   .clk(clk), 
+                   .dat(Disp_dat[15:0]), 
+                   .AN(AN[3:0]), 
+                   .ce1ms(), 
+                   .ce10ms(ce10ms), 
+                   .ce100ms(ce100ms), 
+                   .seg(seg[6:0]), 
+                   .seg_P(seg_P));
+   LED_BL  XLXI_5 (.DI(M[7:0]), 
+                  .E(JD1_DUMMY), 
+                  .DO(LED[7:0]));
+   MUX_FSK  XLXI_7 (.A(FSK_SH[11:0]), 
+                   .B(MFSK[11:0]), 
+                   .s(XLXN_8), 
+                   .C(FSK_IN[11:0]));
+   AND2  XLXI_12 (.I0(BTN1), 
+                 .I1(BTN2), 
+                 .O(XLXN_8));
+   BTN_REG_AMP  XLXI_13 (.BTN_DOWN(BTN0), 
+                        .BTN_UP(BTN3), 
+                        .ce(ce10ms), 
+                        .clk(clk), 
+                        .M(M[7:0]));
+   Gen_FSK_Byte  XLXI_16 (.clk(clk), 
+                         .DAT(SW[7:0]), 
+                         .M(M[7:0]), 
+                         .st(ce100ms), 
+                         .ce_SIN(st_SDAC), 
+                         .en_tx(JB1), 
+                         .FSK_SH(FSK_SH[11:0]), 
+                         .S(JB3), 
+                         .UTXD(JB2));
+   BUFG  XLXI_26 (.I(F50MHz), 
+                 .O(clk));
+   MUX_dat  XLXI_27 (.AH(SW[7:0]), 
+                    .AL(rx_dat[7:0]), 
+                    .B(AMP[15:0]), 
+                    .BTN1(BTN1), 
+                    .BTN2(BTN2), 
+                    .C(SH[15:0]), 
+                    .DH(SW[7:0]), 
+                    .DL(rx_dat[7:0]), 
+                    .E(Disp_dat[15:0]));
+   SPI_DAC8043  XLXI_28 (.clk(clk), 
+                        .DI(FSK_SH[11:0]), 
+                        .st(st_SDAC), 
+                        .cb_bit(), 
+                        .ce(), 
+                        .NLD(JA10), 
+                        .SCLK(JA8), 
+                        .SDAT(JA9));
+   ADC_95  XLXI_30 (.BUSY(JC9), 
+                   .clk(clk), 
+                   .SDAT(JC8), 
+                   .st(st_SADC), 
+                   .ADC_5000(MFSK[11:0]), 
+                   .SCLK(JC7), 
+                   .st_ADC(JC10));
+   FSK_RXD  XLXI_31 (.clk(clk), 
+                    .FSK_IN(FSK_IN[11:0]), 
+                    .AMPdec(AMP[15:0]), 
+                    .en_rx_byte(JD1_DUMMY), 
+                    .FSK_res(JD4), 
+                    .OCD(JD3), 
+                    .rx_dat(rx_dat[7:0]), 
+                    .SHdec(SH[15:0]), 
+                    .st_SADC(st_SADC), 
+                    .URXD(JD2));
+endmodule
